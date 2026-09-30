@@ -390,6 +390,7 @@ Do not include markdown or explanations. Return ONLY the JSON array.
   const result = {
     scrapedJobsCount: scrapedJobs.length,
     analyzedJobsCount: topJobs.length,
+    topJobs: topJobs,
     dynamicSkills: dynamicSkillsData,
     similarityScore,
     matchedSkills: matchedSkillsData,

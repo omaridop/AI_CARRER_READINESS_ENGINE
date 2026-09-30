@@ -32,7 +32,7 @@ interface PostingMatch {
  * Clicking a job expands a detail view showing matched vs missing skills.
  */
 export const JobMatch = () => {
-  const { skills, setStep, targetJobTitle } = useWizard();
+  const { skills, setStep, targetJobTitle, magicModeData } = useWizard();
   const { execute, isLoading } = useApi<{ matches: PostingMatch[] }>();
   const [matches, setMatches] = useState<PostingMatch[]>([]);
   const [selectedJob, setSelectedJob] = useState<PostingMatch | null>(null);
@@ -46,7 +46,59 @@ export const JobMatch = () => {
       return;
     }
 
-    if (targetJobTitle !== 'Junior Data Analyst') return; // Skip DB match for custom job
+    // MAGIC MODE MATCHING (VIRTUAL)
+    if (targetJobTitle !== 'Junior Data Analyst') {
+      if (magicModeData && magicModeData.topJobs) {
+        const dynamicSkills = (magicModeData.dynamicSkills || []).map((s: any) => s.skill || s);
+        const userSkillNames = skillNames.map(name => name.toLowerCase());
+        
+        const virtualMatches: PostingMatch[] = magicModeData.topJobs.map((job: any, index: number) => {
+          const desc = (job.description || '').toLowerCase();
+          
+          let jobRequiredSkills = dynamicSkills.filter((skillName: string) => 
+            desc.includes(skillName.toLowerCase())
+          ).map((name: string, i: number) => ({ id: i, name, category: 'dynamic' }));
+          
+          if (jobRequiredSkills.length === 0) {
+             jobRequiredSkills = dynamicSkills.slice(0, 5).map((name: string, i: number) => ({ id: i, name, category: 'dynamic' }));
+          }
+
+          const matched: PostingSkill[] = [];
+          const missing: PostingSkill[] = [];
+          
+          jobRequiredSkills.forEach((reqSkill: PostingSkill) => {
+            if (userSkillNames.includes(reqSkill.name.toLowerCase())) {
+              matched.push(reqSkill);
+            } else {
+              missing.push(reqSkill);
+            }
+          });
+          
+          const total = matched.length + missing.length;
+          const matchPercent = total === 0 ? 0 : Math.round((matched.length / total) * 100);
+
+          return {
+            id: 1000 + index,
+            title: job.title || 'Unknown Title',
+            company: job.company || 'Unknown Company',
+            location: job.location || 'Unknown Location',
+            source_label: 'real' as const,
+            source_name: job.source || 'web',
+            date_posted: job.date || null,
+            totalSkills: total,
+            matchedSkills: matched,
+            missingSkills: missing,
+            matchPercent
+          };
+        });
+        
+        virtualMatches.sort((a, b) => b.matchPercent - a.matchPercent);
+        setMatches(virtualMatches);
+      }
+      return;
+    }
+
+    // STATIC DATABASE MATCHING
     const result = await execute('/postings/match', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -58,7 +110,7 @@ export const JobMatch = () => {
     } else if (result.error) {
       setError(result.error);
     }
-  }, [skills, execute]);
+  }, [skills, execute, targetJobTitle, magicModeData]);
 
   useEffect(() => {
     loadMatches();
