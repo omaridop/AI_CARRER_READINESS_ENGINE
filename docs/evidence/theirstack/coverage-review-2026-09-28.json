@@ -1,0 +1,290 @@
+[
+  {
+    "search": "review",
+    "query": {
+      "page": 0,
+      "limit": 25,
+      "job_country_code_or": [
+        "JO"
+      ],
+      "job_title_or": [
+        "data analyst"
+      ],
+      "job_title_not": [
+        "senior",
+        "sr",
+        "lead",
+        "manager",
+        "head",
+        "principal"
+      ],
+      "posted_at_gte": "2025-09-28",
+      "posted_at_lte": "2026-09-28",
+      "include_total_results": true
+    },
+    "metadata": {
+      "total_results": 18,
+      "truncated_results": 0,
+      "truncated_companies": 0,
+      "total_companies": 13
+    },
+    "jobs": [
+      {
+        "id": 810077824,
+        "job_title": "Data & Visualization Analyst",
+        "company": "APG eCommerce",
+        "location": "Amman, Amman, Jordan",
+        "date_posted": "2026-08-19",
+        "url": "https://apgecommerce.bamboohr.com/careers/228"
+      },
+      {
+        "id": 800481441,
+        "job_title": "Data Solutions Analyst / Scientist",
+        "company": "APG eCommerce",
+        "location": "Amman, Amman, Jordan",
+        "date_posted": "2026-08-12",
+        "url": "https://apgecommerce.bamboohr.com/careers/223"
+      },
+      {
+        "id": 795218534,
+        "job_title": "Data Analyst - Retail",
+        "company": "Antal International",
+        "location": "Amman",
+        "date_posted": "2026-08-05",
+        "url": "https://www.linkedin.com/jobs/view/4447393525/"
+      },
+      {
+        "id": 740711490,
+        "job_title": "Intern Data Analyst, Data Insights",
+        "company": "SCI Career Site",
+        "location": "United Kingdom",
+        "date_posted": "2026-06-25",
+        "url": "https://hcri.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/16866"
+      },
+      {
+        "id": 740966749,
+        "job_title": "Data Quality Analyst",
+        "company": "Brainlake Advertising LLC",
+        "location": "Amman",
+        "date_posted": "2026-06-25",
+        "url": "https://jobs.workable.com/view/xtNLgG74R14eWuHEVVdMrt/hybrid-data-quality-analyst-in-amman-at-brainlake-advertising-llc"
+      },
+      {
+        "id": 749257436,
+        "job_title": "Data Analyst",
+        "company": "Client of Kalamntina",
+        "location": "Amman",
+        "date_posted": "2026-06-24",
+        "url": "https://www.naukrigulf.com/data-analyst-jobs-in-amman-jordan-in-client-of-kalamntina-5-to-7-years-n-cd-50000133-jid-240626500300"
+      },
+      {
+        "id": 740878305,
+        "job_title": "Data Analyst (AI-Driven SME)",
+        "company": "LigaData",
+        "location": "Amman, Amman, Jordan",
+        "date_posted": "2026-06-05",
+        "url": "https://ligadata.bamboohr.com/careers/150"
+      },
+      {
+        "id": 664622191,
+        "job_title": "Data Analyst",
+        "company": "The Chefz",
+        "location": "Amman",
+        "date_posted": "2026-04-16",
+        "url": "https://jobs.workable.com/view/oZb3DBgS5bPkqTMZzc7WDv/data-analyst-in-amman-at-the-chefz"
+      },
+      {
+        "id": 741105884,
+        "job_title": "Data Solution Analyst P&C",
+        "company": "APG eCommerce",
+        "location": "Amman, Amman, Jordan",
+        "date_posted": "2026-04-02",
+        "url": "https://apgecommerce.bamboohr.com/careers/214"
+      },
+      {
+        "id": 657172014,
+        "job_title": "Product Data Analyst",
+        "company": "eon Dental",
+        "location": "Amman",
+        "date_posted": "2026-03-25",
+        "url": "https://www.naukrigulf.com/product-data-analyst-jobs-in-amman-jordan-in-eon-dental-5-to-10-years-n-cd-10008229-jid-250326500291"
+      },
+      {
+        "id": 606258928,
+        "job_title": "Data Analyst",
+        "company": "Syarah",
+        "location": "Amman",
+        "date_posted": "2026-01-19",
+        "url": "https://www.naukrigulf.com/data-analyst-jobs-in-amman-jordan-in-syarah-3-to-7-years-n-cd-40000694-jid-190126501872"
+      },
+      {
+        "id": 605861819,
+        "job_title": "Data Analyst",
+        "company": "Syarah",
+        "location": "Amman",
+        "date_posted": "2026-01-18",
+        "url": "https://jobs.workable.com/view/tAWXQJicyw6MfXYCkRYt9e/data-analyst-in-amman-at-syarah"
+      },
+      {
+        "id": 580142373,
+        "job_title": "Data Analyst",
+        "company": "ConsenSys",
+        "location": "EMEA, USA",
+        "date_posted": "2025-11-21",
+        "url": "https://consensys.io/open-roles/7385816"
+      },
+      {
+        "id": 578152898,
+        "job_title": "Data Analyst",
+        "company": "Syarah",
+        "location": "Amman",
+        "date_posted": "2025-11-17",
+        "url": "https://jobs.workable.com/view/chxMUw4WWgRMrt5UZCVGBR/data-analyst-in-amman-at-syarah"
+      },
+      {
+        "id": 574086531,
+        "job_title": "Data Analyst",
+        "company": "Client of Kalamntina",
+        "location": "Amman",
+        "date_posted": "2025-10-31",
+        "url": "https://www.naukrigulf.com/data-analyst-jobs-in-amman-jordan-in-client-of-kalamntina-1-to-5-years-n-cd-50000133-jid-311025500123"
+      },
+      {
+        "id": 572071250,
+        "job_title": "Data Analyst",
+        "company": "Unifonic",
+        "location": "Amman",
+        "date_posted": "2025-10-24",
+        "url": "https://www.naukrigulf.com/data-analyst-jobs-in-amman-jordan-in-unifonic-2-to-7-years-n-cd-10003777-jid-241025500976"
+      },
+      {
+        "id": 567426847,
+        "job_title": "Data Analyst",
+        "company": "Optimiza",
+        "location": "Amman",
+        "date_posted": "2025-10-09",
+        "url": "https://jobs.workable.com/view/uxpGUJ7ouGannp8YmmDg6U/data-analyst-in-amman-at-optimiza"
+      },
+      {
+        "id": 564225507,
+        "job_title": "Data Analyst",
+        "company": "Bank of Jordan",
+        "location": "Amman",
+        "date_posted": "2025-09-28",
+        "url": "https://jobs.workable.com/view/2K7nnECrhX5TS1SWj5p51t/data-analyst-in-amman-at-bank-of-jordan"
+      }
+    ]
+  },
+  {
+    "search": "junior",
+    "query": {
+      "page": 0,
+      "limit": 25,
+      "job_country_code_or": [
+        "JO"
+      ],
+      "job_title_or": [
+        "data analyst",
+        "analytics analyst",
+        "business intelligence analyst",
+        "reporting analyst",
+        "محلل بيانات"
+      ],
+      "job_description_pattern_or": [
+        "(?i)\\b(junior|graduate|entry.level|internship|intern|trainee)\\b"
+      ],
+      "posted_at_gte": "2025-09-28",
+      "posted_at_lte": "2026-09-28",
+      "include_total_results": true
+    },
+    "metadata": {
+      "total_results": 3,
+      "truncated_results": 0,
+      "truncated_companies": 0,
+      "total_companies": 3
+    },
+    "jobs": [
+      {
+        "id": 740711490,
+        "job_title": "Intern Data Analyst, Data Insights",
+        "company": "SCI Career Site",
+        "location": "United Kingdom",
+        "date_posted": "2026-06-25",
+        "url": "https://hcri.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/16866"
+      },
+      {
+        "id": 602351915,
+        "job_title": "Senior Data Analyst",
+        "company": "Tamatem Games",
+        "location": "Amman",
+        "date_posted": "2026-01-13",
+        "url": "https://www.naukrigulf.com/senior-data-analyst-jobs-in-amman-jordan-in-tamatem-games-2-to-8-years-n-cd-40000103-jid-130126501189"
+      },
+      {
+        "id": 601498165,
+        "job_title": "Senior Data Analyst",
+        "company": "Tamatem",
+        "location": "Amman",
+        "date_posted": "2026-01-12",
+        "url": "https://jobs.workable.com/view/bwJTyuiVMMkAhWf9oku33X/senior-data-analyst-in-amman-at-tamatem"
+      }
+    ]
+  },
+  {
+    "search": "title",
+    "query": {
+      "page": 0,
+      "limit": 5,
+      "job_country_code_or": [
+        "JO"
+      ],
+      "job_title_pattern_and": [
+        "\\b(junior|graduate|entry.level|intern|trainee)\\b",
+        "\\b(data|analytics|business intelligence|reporting)\\b"
+      ],
+      "posted_at_gte": "2025-09-28",
+      "posted_at_lte": "2026-09-28",
+      "include_total_results": true
+    },
+    "metadata": {
+      "total_results": 4,
+      "truncated_results": 0,
+      "truncated_companies": 0,
+      "total_companies": 3
+    },
+    "jobs": [
+      {
+        "id": 844158239,
+        "job_title": "Junior Data Engineer",
+        "company": "LigaData",
+        "location": "Amman, Amman, Jordan",
+        "date_posted": "2026-09-16",
+        "url": "https://ligadata.bamboohr.com/careers/160"
+      },
+      {
+        "id": 815935889,
+        "job_title": "ZAIN2476 - Data Platform Engineer Intern",
+        "company": "Zain Jordan",
+        "location": "Amman",
+        "date_posted": "2026-08-20",
+        "url": "https://www.linkedin.com/jobs/view/4456498220/"
+      },
+      {
+        "id": 742603988,
+        "job_title": "Junior Data Platform Engineer",
+        "company": "LigaData",
+        "location": "Jordan",
+        "date_posted": "2026-06-26",
+        "url": "https://ligadata.bamboohr.com/careers/155"
+      },
+      {
+        "id": 740711490,
+        "job_title": "Intern Data Analyst, Data Insights",
+        "company": "SCI Career Site",
+        "location": "United Kingdom",
+        "date_posted": "2026-06-25",
+        "url": "https://hcri.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/16866"
+      }
+    ]
+  }
+]

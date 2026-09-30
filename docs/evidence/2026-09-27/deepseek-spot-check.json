@@ -1,0 +1,176 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash",
+  "reasoningEnabled": false,
+  "rows": [
+    {
+      "label": "Simple",
+      "status": 200,
+      "ms": 4678.343,
+      "skill": "Excel",
+      "style": "simple",
+      "source": "ai",
+      "visibleBadge": "✨\nLive AI Generation",
+      "textLength": 542
+    },
+    {
+      "label": "Visual",
+      "status": 200,
+      "ms": 10023.072,
+      "skill": "Excel",
+      "style": "visual",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 769
+    },
+    {
+      "label": "Example-based",
+      "status": 200,
+      "ms": 4653.332,
+      "skill": "Excel",
+      "style": "example",
+      "source": "ai",
+      "visibleBadge": "✨\nLive AI Generation",
+      "textLength": 391
+    },
+    {
+      "label": "Step-by-step",
+      "status": 200,
+      "ms": 3400.716,
+      "skill": "Excel",
+      "style": "step_by_step",
+      "source": "ai",
+      "visibleBadge": "✨\nLive AI Generation",
+      "textLength": 230
+    },
+    {
+      "label": "Arabic",
+      "status": 200,
+      "ms": 5502.448,
+      "skill": "Excel",
+      "style": "arabic",
+      "source": "ai",
+      "visibleBadge": "✨\nLive AI Generation",
+      "textLength": 494
+    },
+    {
+      "label": "Communication / Simple",
+      "status": 200,
+      "ms": 2024.043,
+      "skill": "Communication",
+      "style": "simple",
+      "source": "ai",
+      "visibleBadge": "✨\nLive AI Generation",
+      "textLength": 358
+    }
+  ],
+  "network": [
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458224137.8901,
+        "domainLookupStart": 62.962,
+        "domainLookupEnd": 62.979,
+        "connectStart": 62.979,
+        "secureConnectionStart": -1,
+        "connectEnd": 1596.343,
+        "requestStart": 1596.464,
+        "responseStart": 4672.323,
+        "responseEnd": 4678.343
+      },
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"simple\",\"explanation_text\":\"Excel is a computer program that looks like a giant grid of boxes. Each box can hold a number, a word, or a date. You can use it to keep lists, do math automatically, and make simple charts. Think of it like a digital notebook where you can add up totals instantly without a calculator. For example, you can type your monthly spending in one column and Excel will tell you the total. It’s great for organizing anything from shopping lists to school grades. You don’t need to be a computer expert to start. Just open it, click a box, and type.\",\"example\":null,\"notes\":null,\"source\":\"ai\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458240594.746,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.192,
+        "responseStart": 10016.767,
+        "responseEnd": 10023.072
+      },
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"visual\",\"explanation_text\":\"Think of Excel as a giant grid:\\n\\n     A          B          C          D\\n  ┌──────────┬──────────┬──────────┬──────────┐\\n1 │ Product  │ Region   │ Sales    │ Month    │\\n  ├──────────┼──────────┼──────────┼──────────┤\\n2 │ Widget A │ Amman    │ 1,200    │ Jan      │\\n3 │ Widget B │ Irbid    │ 800      │ Jan      │\\n4 │ Widget A │ Amman    │ 1,500    │ Feb      │\\n  └──────────┴──────────┴──────────┴──────────┘\\n\\nFormulas live in cells and reference other cells:\\n  Cell E2: =SUM(C2:C4)  →  3,500\\n\\nA Pivot Table collapses this grid into a summary:\\n  ┌──────────┬──────────┐\\n  │ Product  │ Total    │\\n  ├──────────┼──────────┤\\n  │ Widget A │ 2,700    │\\n  │ Widget B │ 800      │\\n  └──────────┴──────────┘\\n\\nThis is the core of Excel: raw data → formulas → summaries → charts.\",\"example\":null,\"notes\":null,\"source\":\"fallback\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458250669.174,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.156,
+        "responseStart": 4649.078,
+        "responseEnd": 4653.332
+      },
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"example\",\"explanation_text\":\"Excel is a spreadsheet program used to store, organize, and analyze data. It's like a digital grid of rows and columns where you can enter numbers, text, and formulas. Each cell has an address (e.g., A1, B2). You can use Excel to calculate sums, averages, create charts, and much more. Think of it as a super-powered calculator that also keeps track of your data and can make graphs from it.\",\"example\":\"Open Excel and try this:\\n1. In cell A1 type: Product\\n2. In B1 type: Price\\n3. In C1 type: Quantity\\n4. In A2 type: Apples\\n5. In B2 type: 1.50\\n6. In C2 type: 10\\n7. In A3 type: Bananas\\n8. In B3 type: 0.75\\n9. In C3 type: 20\\n10. In A4 type: Total\\n11. In B4 type the formula: =B2*C2\\n12. In B5 type the formula: =B3*C3\\n13. In B6 type the formula: =SUM(B4:B5)\\n14. Press Enter after each entry. You should see B4 = 15, B5 = 15, B6 = 30.\\nNow you've used Excel to calculate total costs!\",\"notes\":null,\"source\":\"ai\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458279257.9119,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.161,
+        "responseStart": 3395.368,
+        "responseEnd": 3400.716
+      },
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"step_by_step\",\"explanation_text\":\"Excel is a spreadsheet program used for data organization, calculation, and analysis. For a complete beginner, follow these steps this week to build foundational proficiency. Focus on hands-on practice with small, realistic tasks.\",\"example\":null,\"notes\":\"Practice daily for 30-60 minutes. Use Excel's built-in help (F1) and online resources like Microsoft's Excel training videos. Avoid jumping to advanced features until you are comfortable with basic navigation and formulas. Consider using sample datasets from Kaggle or Excel's templates to practice.\",\"source\":\"ai\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458282700.247,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.161,
+        "responseStart": 5501.239,
+        "responseEnd": 5502.448
+      },
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"arabic\",\"explanation_text\":\"برنامج إكسل هو أداة تستخدم لتنظيم البيانات في جداول. الجداول تتكون من صفوف وأعمدة، وتقاطع الصف والعمود يسمى خلية. يمكنك إدخال أرقام أو نصوص في الخلايا، ثم استخدام الصيغ لإجراء عمليات حسابية بسيطة مثل الجمع أو الطرح. كما يمكنك إنشاء رسوم بيانية لتمثيل البيانات بصرياً. إكسل مفيد جداً لتحليل البيانات لأنه يسمح بترتيب المعلومات واستخراج النتائج بسرعة. حتى لو لم تستخدمه من قبل، يمكنك تعلم الأساسيات خلال ساعات قليلة. ابدأ بإدخال بعض الأرقام في خلايا ثم جرب كتابة =A1+B1 في خلية أخرى لترى النتيجة.\",\"example\":null,\"notes\":null,\"source\":\"ai\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": "pending"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "timing": {
+        "startTime": 1790458288541.851,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.322,
+        "responseStart": 2018.338,
+        "responseEnd": 2024.043
+      },
+      "body": "{\"data\":{\"skill\":\"Communication\",\"style\":\"simple\",\"explanation_text\":\"Communication means sharing ideas clearly so others understand you. In data analysis, you often explain your findings to people who are not data experts. You need to tell them what you found, why it matters, and what they should do. This includes speaking, writing, and listening. Good communication helps your team make better decisions and trust your work.\",\"example\":null,\"notes\":null,\"source\":\"ai\"},\"error\":null}"
+    }
+  ],
+  "console": []
+}

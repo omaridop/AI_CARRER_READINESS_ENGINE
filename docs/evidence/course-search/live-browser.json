@@ -1,0 +1,48 @@
+{
+  "elapsedMs": 8450,
+  "status": 200,
+  "body": {
+    "data": {
+      "skill": "SQL",
+      "source": "web",
+      "researchedAt": "2026-09-27T17:58:16.299Z",
+      "cached": false,
+      "courses": [
+        {
+          "url": "https://www.coursera.org/learn/sql-beginners-fundamentals-database-setup",
+          "provider": "Coursera",
+          "title": "SQL for Beginners: Fundamentals & Database Setup | Coursera",
+          "whyRelevant": "The course title mentions SQL or a recognized related term.",
+          "sourceExcerpt": "SQL for Beginners: Fundamentals & Database Setup | Coursera ... # SQL for Beginners: Fundamentals & Database Setup ... Beginner level ... 4 hours to complete ... - Grasp why SQL is the backbone of modern data work and how relational databas…"
+        },
+        {
+          "url": "https://www.coursera.org/learn/intro-to-sql",
+          "provider": "Coursera",
+          "title": "Intro to SQL | Coursera",
+          "whyRelevant": "The course title mentions SQL or a recognized related term.",
+          "sourceExcerpt": "Intro to SQL | Coursera # Intro to SQL ... Beginner level ... ll have built ... SQL and developed ... skills to work effectively"
+        },
+        {
+          "url": "https://www.coursera.org/learn/intro-sql",
+          "provider": "Coursera",
+          "title": "Introduction to Structured Query Language (SQL)",
+          "whyRelevant": "The course title mentions SQL or a recognized related term.",
+          "sourceExcerpt": "Introduction to Structured Query Language (SQL) | Coursera # Introduction to Structured Query Language (SQL) ... users, roles ... and courses. ... ### Introduction to Structured Query Language (SQL) ... SQL language."
+        }
+      ],
+      "notice": "A shortlist from web search, ordered by topic match—not an exhaustive quality ranking. Check the syllabus, prerequisites, language and current price on the provider’s page.",
+      "searchLinks": [
+        {
+          "provider": "Coursera",
+          "url": "https://www.coursera.org/search?query=SQL"
+        },
+        {
+          "provider": "Udemy",
+          "url": "https://www.udemy.com/courses/search/?q=SQL"
+        }
+      ]
+    },
+    "error": null
+  },
+  "errors": []
+}

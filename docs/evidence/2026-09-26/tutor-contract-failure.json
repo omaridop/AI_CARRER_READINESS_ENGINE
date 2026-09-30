@@ -1,0 +1,62 @@
+{
+  "visible": "1\nProfile\n2\nTarget Role\n3\nEvidence\n4\nAnalysis\n5\nResults\n6\nTutor\nAdaptive Tutor\n\nLearning: Excel\n\nBack to Roadmap\nTRY A DIFFERENT STYLE\nSimple\nVisual\nExample\nStep-by-step\nArabic\n\nError: Invalid style: \"step-by-step\". Must be one of: simple, visual, example, step_by_step, arabic\n\nReset Demo State / Start Over",
+  "network": [
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "started": 1790412537372,
+      "timing": {
+        "startTime": 1790412537372.416,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.431,
+        "responseStart": 714.475,
+        "responseEnd": 720.414
+      },
+      "finished": 1790412538179,
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"simple\",\"explanation_text\":\"Microsoft Excel is a spreadsheet program where data is organized in rows and columns on a grid. You can type numbers, text, or dates into cells, then use formulas to calculate totals, averages, or find patterns. For example, if column B has monthly sales figures, you can type =SUM(B2:B13) to get the yearly total instantly. Excel is the most commonly requested tool in data analyst job postings because it is fast for quick analyses, widely available, and understood by non-technical colleagues. Key skills include pivot tables (summarizing large data), VLOOKUP/XLOOKUP (finding matching data), conditional formatting, and chart creation.\",\"example\":null,\"notes\":null,\"source\":\"fallback\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 200,
+      "started": 1790412537372,
+      "timing": {
+        "startTime": 1790412537370.76,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.316,
+        "responseStart": 712.741,
+        "responseEnd": 717.195
+      },
+      "finished": 1790412538179,
+      "body": "{\"data\":{\"skill\":\"Excel\",\"style\":\"simple\",\"explanation_text\":\"Microsoft Excel is a spreadsheet program where data is organized in rows and columns on a grid. You can type numbers, text, or dates into cells, then use formulas to calculate totals, averages, or find patterns. For example, if column B has monthly sales figures, you can type =SUM(B2:B13) to get the yearly total instantly. Excel is the most commonly requested tool in data analyst job postings because it is fast for quick analyses, widely available, and understood by non-technical colleagues. Key skills include pivot tables (summarizing large data), VLOOKUP/XLOOKUP (finding matching data), conditional formatting, and chart creation.\",\"example\":null,\"notes\":null,\"source\":\"fallback\"},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/tutor/explain",
+      "method": "POST",
+      "status": 400,
+      "started": 1790412548045,
+      "timing": {
+        "startTime": 1790412548049.906,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.236,
+        "responseStart": 7.248,
+        "responseEnd": 14.844
+      },
+      "finished": 1790412548061,
+      "body": "{\"data\":null,\"error\":{\"message\":\"Invalid style: \\\"step-by-step\\\". Must be one of: simple, visual, example, step_by_step, arabic\"}}"
+    }
+  ]
+}

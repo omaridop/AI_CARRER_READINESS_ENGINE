@@ -1,0 +1,127 @@
+
+> backend@0.1.0 test
+> tsx --test src/__tests__/*.test.ts
+
+▶ computeSkillFrequencies
+  ✔ counts skill appearances across postings correctly (18.9812ms)
+  ✔ sorts results by weight descending (0.4012ms)
+  ✔ handles empty extractions (1.5047ms)
+  ✔ throws on totalPostings <= 0 (0.6129ms)
+  ✔ computes single-posting case correctly (0.3704ms)
+  ✔ weight = frequency / totalPostings (verified with 10 postings) (0.3465ms)
+✔ computeSkillFrequencies (24.755ms)
+▶ buildRoleRequirements
+  ✔ maps taxonomy indices to DB skill IDs (0.3497ms)
+✔ buildRoleRequirements (0.5499ms)
+▶ AnalysisService Formula
+  ✔ computes readiness score exactly according to the core threshold formula (1.9451ms)
+  ✔ caps the readiness score at 100% for a full-evidence top-core-skills profile (0.509ms)
+✔ AnalysisService Formula (4.3713ms)
+▶ API Integration
+  ✔ POST /analysis returns 404 for unknown role (207.359ms)
+  ✔ GET /roles/:id/requirements returns 404 for unknown role (14.2284ms)
+  ✔ POST /profile validates input shape (8.8166ms)
+  ✔ End-to-End: POST /profile -> POST /analysis (36.4879ms)
+✔ API Integration (282.6623ms)
+[course-search] search_not_configured; using provider search links
+[course-search] search_unavailable; using provider search links
+[course-search] search_http_429; using provider search links
+[course-search] search_unavailable; using provider search links
+▶ Course search grounding and bounded requests
+  ✔ rejects untrusted hosts, redirects, credentials and non-course paths (5.9676ms)
+  ✔ uses citations only, strips tracking and deduplicates canonical URLs (3.1643ms)
+  ✔ filters unrelated courses and places title matches before excerpt-only matches (4.4644ms)
+  ✔ accepts taxonomy aliases and caps the shortlist (1.9002ms)
+  ✔ missing key returns honestly labeled fallback without network activity (3.4879ms)
+  ✔ deduplicates concurrent research and caches success with original timestamp (4.0746ms)
+  ✔ bounds concurrent searches across different skills (0.8658ms)
+  ✔ no citations, malformed JSON and provider errors never become live recommendations (51.8239ms)
+  ✔ sends bounded web-search parameters and never sends a student profile (1.4591ms)
+  ✔ keeps the deadline active while the response body is stalled (4.102ms)
+✔ Course search grounding and bounded requests (84.3411ms)
+▶ data provenance
+  ✔ dataset has at least 30 postings (MVP minimum) (1.597ms)
+  ✔ dataset has at most 50 postings (MVP scope) (0.4869ms)
+  ✔ every posting has a valid source_label ("real" or "sample") (0.4202ms)
+  ✔ no posting has a blank or empty source_label (0.3389ms)
+  ✔ every posting has a non-empty source_name (0.3165ms)
+  ✔ every posting has a non-empty description (0.3457ms)
+  ✔ every posting has a non-empty title (0.3144ms)
+  ✔ fails loudly if zero real postings exist (all-synthetic dataset) (0.3411ms)
+  ✔ source_label values are exactly "real" or "sample" (no typos) (0.4106ms)
+✔ data provenance (6.9609ms)
+▶ normalizeAlias
+  ✔ maps canonical name to itself (1.6886ms)
+  ✔ maps known aliases to their canonical skill (case-insensitive) (0.3714ms)
+  ✔ maps Excel aliases correctly (0.3229ms)
+  ✔ maps data cleaning aliases correctly (0.2882ms)
+  ✔ maps soft skill aliases correctly (0.3658ms)
+  ✔ returns null for unknown aliases (0.3361ms)
+✔ normalizeAlias (5.6037ms)
+▶ extractSkills
+  ✔ extracts SQL, Python, and Excel from a typical posting (8.3546ms)
+  ✔ extracts Power BI from various spellings (8.3992ms)
+  ✔ does NOT false-positive on SQL inside MySQL (0.5103ms)
+  ✔ does NOT false-positive on "R" in normal English words (0.6236ms)
+  ✔ extracts R Programming from explicit mentions (0.7244ms)
+  ✔ deduplicates skills when multiple aliases match (0.3617ms)
+  ✔ handles case-insensitive matching (0.4602ms)
+  ✔ extracts soft skills from natural language (0.4882ms)
+  ✔ returns empty array for irrelevant text (0.3468ms)
+✔ extractSkills (21.3061ms)
+▶ GET /api/skills
+  ✔ returns the full taxonomy from the database with aliases (123.6271ms)
+✔ GET /api/skills (135.2521ms)
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/simple — using fallback
+[ai-client] API call failed: OpenRouter API error 429: Controlled rate limit
+[tutor-service] No AI response for Excel/visual — using fallback
+[tutor-schema] Failed to parse AI response as JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[tutor-service] AI response failed validation for SQL/step_by_step — using fallback
+▶ Tutor provider failures (controlled; no external calls)
+  ✔ missing both keys uses fallback without a network call (6.2665ms)
+  ✔ provider 429 keeps skill/style and identifies fallback (55.1819ms)
+  ✔ malformed model JSON never becomes a live response (5.4723ms)
+[ai-client] Request timed out after 10000ms
+[tutor-service] No AI response for SQL/simple — using fallback
+  ✔ times out a stalled response body after headers have arrived (10010.1712ms)
+✔ Tutor provider failures (controlled; no external calls) (10079.614ms)
+[tutor-schema] Missing or empty "style" field
+[tutor-schema] "explanation_text" must be a string with ≥50 characters, got: 10 chars
+[tutor-schema] Failed to parse AI response as JSON: Unexpected token 'T', "This is ju"... is not valid JSON
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/simple — using fallback
+▶ Phase C: Adaptive Tutor Tests
+  ▶ 1. Schema Validation
+    ✔ accepts valid JSON matching the schema (1.4554ms)
+    ✔ rejects JSON with missing required fields (0.5782ms)
+    ✔ rejects JSON with explanation_text < 50 chars (0.3054ms)
+    ✔ handles malformed JSON (not parsable) (0.2839ms)
+    ✔ successfully parses JSON enclosed in markdown fences (simulating LLM output) (0.2154ms)
+  ✔ 1. Schema Validation (3.9152ms)
+  ▶ 2. Fallback Mechanism
+    ✔ provides fallback content for top 9 curated skills across all 5 styles (0.4258ms)
+    ✔ provides a generic fallback for unknown skills (0.406ms)
+  ✔ 2. Fallback Mechanism (1.1869ms)
+  ▶ 3. TutorService Orchestration
+    ✔ falls back seamlessly when ANTHROPIC_API_KEY is not set (1.2282ms)
+  ✔ 3. TutorService Orchestration (1.5935ms)
+  ▶ 4. API Endpoint Integration
+    ✔ POST /tutor/explain rejects missing skillName (130.7345ms)
+    ✔ POST /tutor/explain rejects invalid style (13.1908ms)
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/visual — using fallback
+    ✔ POST /tutor/explain returns explanation for valid request (fallback path expected locally without key) (7.7472ms)
+  ✔ 4. API Endpoint Integration (152.0476ms)
+✔ Phase C: Adaptive Tutor Tests (168.8003ms)
+ℹ tests 63
+ℹ suites 15
+ℹ pass 63
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12332.5877

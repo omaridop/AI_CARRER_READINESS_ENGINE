@@ -1,0 +1,136 @@
+{
+  "capturedAt": "2026-09-26T08:45:41.366Z",
+  "browser": "151.0.4129.72",
+  "url": "http://localhost:5173/",
+  "elapsedSinceClickMs": 7561,
+  "visible": "1\nProfile\n2\nTarget Role\n3\nEvidence\n4\nAnalysis\n5\nResults\n6\nTutor\nAnalyzing Profile\n\nInitializing scan...",
+  "network": [
+    {
+      "url": "http://localhost:3001/api/skills",
+      "method": "GET",
+      "started": 1790412332902,
+      "status": 200,
+      "responseAt": 1790412332905,
+      "finished": 1790412332906,
+      "timing": {
+        "startTime": 1790412332880.455,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.309,
+        "responseStart": 13.621,
+        "responseEnd": 27.499
+      },
+      "body": "{\"data\":{\"skills\":[{\"id\":1,\"name\":\"SQL\",\"category\":\"programming\",\"aliases\":[\"structured query language\",\"sql queries\",\"sql programming\",\"t-sql\",\"tsql\",\"pl/sql\",\"plsql\"]},{\"id\":2,\"name\":\"Python\",\"category\":\"programming\",\"aliases\":[\"python3\",\"python 3\",\"python programming\",\"python scripting\"]},{\"id\":3,\"name\":\"R Programming\",\"category\":\"programming\",\"aliases\":[\"r programming\",\"r language\",\"rstudio\",\"r studio\",\"r software\",\"programming in r\",\"r statistical\"]},{\"id\":4,\"name\":\"VBA\",\"category\":\"programming\",\"aliases\":[\"visual basic for applications\",\"visual basic\",\"excel vba\",\"vba macros\",\"vba programming\"]},{\"id\":5,\"name\":\"Pandas\",\"category\":\"programming\",\"aliases\":[\"pandas library\",\"python pandas\"]},{\"id\":6,\"name\":\"NumPy\",\"category\":\"programming\",\"aliases\":[\"numpy library\",\"python numpy\"]},{\"id\":7,\"name\":\"Excel\",\"category\":\"analytics\",\"aliases\":[\"microsoft excel\",\"ms excel\",\"advanced excel\",\"excel spreadsheets\",\"excel pivot tables\",\"pivot tables\",\"vlookup\"]},{\"id\":8,\"name\":\"Tableau\",\"category\":\"analytics\",\"aliases\":[\"tableau desktop\",\"tableau server\",\"tableau public\",\"tableau software\"]},{\"id\":9,\"name\":\"Power BI\",\"category\":\"analytics\",\"aliases\":[\"powerbi\",\"power-bi\",\"ms power bi\",\"microsoft power bi\",\"power bi desktop\",\"power bi service\"]},{\"id\":10,\"name\":\"Google Sheets\",\"category\":\"analytics\",\"aliases\":[\"gsheets\",\"google spreadsheets\"]},{\"id\":11,\"name\":\"Looker\",\"category\":\"analytics\",\"aliases\":[\"looker studio\",\"google data studio\",\"data studio\"]},{\"id\":12,\"name\":\"SAS\",\"category\":\"analytics\",\"aliases\":[\"sas programming\",\"sas analytics\",\"sas software\"]},{\"id\":13,\"name\":\"SPSS\",\"category\":\"analytics\",\"aliases\":[\"ibm spss\",\"spss statistics\"]},{\"id\":14,\"name\":\"Data Cleaning\",\"category\":\"data\",\"aliases\":[\"data cleansing\",\"data wrangling\",\"data preprocessing\",\"data preparation\",\"data scrubbing\",\"data quality\"]},{\"id\":15,\"name\":\"Data Visualization\",\"category\":\"data\",\"aliases\":[\"data viz\",\"data visualisation\",\"visual analytics\",\"data charts\",\"visualizing data\"]},{\"id\":16,\"name\":\"Data Modeling\",\"category\":\"data\",\"aliases\":[\"data modelling\",\"database design\",\"data architecture\",\"dimensional modeling\",\"dimensional modelling\"]},{\"id\":17,\"name\":\"ETL\",\"category\":\"data\",\"aliases\":[\"extract transform load\",\"data pipelines\",\"data integration\",\"data extraction\"]},{\"id\":18,\"name\":\"Database Management\",\"category\":\"data\",\"aliases\":[\"database administration\",\"dbms\",\"rdbms\",\"mysql\",\"postgresql\",\"postgres\",\"sql server\",\"microsoft sql server\",\"oracle database\",\"oracle db\"]},{\"id\":19,\"name\":\"Data Analysis\",\"category\":\"data\",\"aliases\":[\"data analytics\",\"data interpretation\",\"analyze data\",\"analysing data\",\"data-driven\"]},{\"id\":20,\"name\":\"Reporting\",\"category\":\"data\",\"aliases\":[\"report generation\",\"report writing\",\"business reporting\",\"dashboard development\",\"creating dashboards\",\"building dashboards\",\"dashboards\"]},{\"id\":21,\"name\":\"Statistics\",\"category\":\"statistics\",\"aliases\":[\"statistical analysis\",\"descriptive statistics\",\"inferential statistics\",\"statistical methods\",\"statistical modeling\",\"statistical modelling\",\"biostatistics\",\"statistical techniques\"]},{\"id\":22,\"name\":\"Machine Learning\",\"category\":\"statistics\",\"aliases\":[\"ml algorithms\",\"predictive modeling\",\"predictive modelling\",\"supervised learning\",\"unsupervised learning\",\"machine-learning\"]},{\"id\":23,\"name\":\"A/B Testing\",\"category\":\"statistics\",\"aliases\":[\"ab testing\",\"split testing\",\"hypothesis testing\"]},{\"id\":24,\"name\":\"Regression Analysis\",\"category\":\"statistics\",\"aliases\":[\"linear regression\",\"logistic regression\",\"regression modeling\",\"regression modelling\"]},{\"id\":25,\"name\":\"Google Analytics\",\"category\":\"tools\",\"aliases\":[\"ga4\",\"google analytics 4\",\"web analytics\"]},{\"id\":26,\"name\":\"BigQuery\",\"category\":\"tools\",\"aliases\":[\"google bigquery\"]},{\"id\":27,\"name\":\"Jupyter\",\"category\":\"tools\",\"aliases\":[\"jupyter notebook\",\"jupyter notebooks\",\"jupyter lab\",\"jupyterlab\"]},{\"id\":28,\"name\":\"Communication\",\"category\":\"soft_skill\",\"aliases\":[\"communication skills\",\"written communication\",\"verbal communication\",\"interpersonal skills\",\"strong communication\"]},{\"id\":29,\"name\":\"Problem Solving\",\"category\":\"soft_skill\",\"aliases\":[\"problem-solving\",\"analytical thinking\",\"critical thinking\",\"analytical skills\"]},{\"id\":30,\"name\":\"Teamwork\",\"category\":\"soft_skill\",\"aliases\":[\"team work\",\"collaboration\",\"team player\",\"cross-functional\",\"cross functional\",\"collaborative\"]},{\"id\":31,\"name\":\"Attention to Detail\",\"category\":\"soft_skill\",\"aliases\":[\"detail-oriented\",\"detail oriented\",\"meticulous\",\"keen eye for detail\"]},{\"id\":32,\"name\":\"Presentation Skills\",\"category\":\"soft_skill\",\"aliases\":[\"presentation\",\"presenting\",\"public speaking\",\"storytelling with data\",\"data storytelling\"]},{\"id\":33,\"name\":\"Time Management\",\"category\":\"soft_skill\",\"aliases\":[\"time-management\",\"deadline management\",\"prioritization\",\"managing priorities\"]}]},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/skills",
+      "method": "GET",
+      "started": 1790412332902,
+      "status": 200,
+      "responseAt": 1790412332906,
+      "finished": 1790412332906,
+      "timing": {
+        "startTime": 1790412332882.635,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 12.064,
+        "responseStart": 15.389,
+        "responseEnd": 30.345
+      },
+      "body": "{\"data\":{\"skills\":[{\"id\":1,\"name\":\"SQL\",\"category\":\"programming\",\"aliases\":[\"structured query language\",\"sql queries\",\"sql programming\",\"t-sql\",\"tsql\",\"pl/sql\",\"plsql\"]},{\"id\":2,\"name\":\"Python\",\"category\":\"programming\",\"aliases\":[\"python3\",\"python 3\",\"python programming\",\"python scripting\"]},{\"id\":3,\"name\":\"R Programming\",\"category\":\"programming\",\"aliases\":[\"r programming\",\"r language\",\"rstudio\",\"r studio\",\"r software\",\"programming in r\",\"r statistical\"]},{\"id\":4,\"name\":\"VBA\",\"category\":\"programming\",\"aliases\":[\"visual basic for applications\",\"visual basic\",\"excel vba\",\"vba macros\",\"vba programming\"]},{\"id\":5,\"name\":\"Pandas\",\"category\":\"programming\",\"aliases\":[\"pandas library\",\"python pandas\"]},{\"id\":6,\"name\":\"NumPy\",\"category\":\"programming\",\"aliases\":[\"numpy library\",\"python numpy\"]},{\"id\":7,\"name\":\"Excel\",\"category\":\"analytics\",\"aliases\":[\"microsoft excel\",\"ms excel\",\"advanced excel\",\"excel spreadsheets\",\"excel pivot tables\",\"pivot tables\",\"vlookup\"]},{\"id\":8,\"name\":\"Tableau\",\"category\":\"analytics\",\"aliases\":[\"tableau desktop\",\"tableau server\",\"tableau public\",\"tableau software\"]},{\"id\":9,\"name\":\"Power BI\",\"category\":\"analytics\",\"aliases\":[\"powerbi\",\"power-bi\",\"ms power bi\",\"microsoft power bi\",\"power bi desktop\",\"power bi service\"]},{\"id\":10,\"name\":\"Google Sheets\",\"category\":\"analytics\",\"aliases\":[\"gsheets\",\"google spreadsheets\"]},{\"id\":11,\"name\":\"Looker\",\"category\":\"analytics\",\"aliases\":[\"looker studio\",\"google data studio\",\"data studio\"]},{\"id\":12,\"name\":\"SAS\",\"category\":\"analytics\",\"aliases\":[\"sas programming\",\"sas analytics\",\"sas software\"]},{\"id\":13,\"name\":\"SPSS\",\"category\":\"analytics\",\"aliases\":[\"ibm spss\",\"spss statistics\"]},{\"id\":14,\"name\":\"Data Cleaning\",\"category\":\"data\",\"aliases\":[\"data cleansing\",\"data wrangling\",\"data preprocessing\",\"data preparation\",\"data scrubbing\",\"data quality\"]},{\"id\":15,\"name\":\"Data Visualization\",\"category\":\"data\",\"aliases\":[\"data viz\",\"data visualisation\",\"visual analytics\",\"data charts\",\"visualizing data\"]},{\"id\":16,\"name\":\"Data Modeling\",\"category\":\"data\",\"aliases\":[\"data modelling\",\"database design\",\"data architecture\",\"dimensional modeling\",\"dimensional modelling\"]},{\"id\":17,\"name\":\"ETL\",\"category\":\"data\",\"aliases\":[\"extract transform load\",\"data pipelines\",\"data integration\",\"data extraction\"]},{\"id\":18,\"name\":\"Database Management\",\"category\":\"data\",\"aliases\":[\"database administration\",\"dbms\",\"rdbms\",\"mysql\",\"postgresql\",\"postgres\",\"sql server\",\"microsoft sql server\",\"oracle database\",\"oracle db\"]},{\"id\":19,\"name\":\"Data Analysis\",\"category\":\"data\",\"aliases\":[\"data analytics\",\"data interpretation\",\"analyze data\",\"analysing data\",\"data-driven\"]},{\"id\":20,\"name\":\"Reporting\",\"category\":\"data\",\"aliases\":[\"report generation\",\"report writing\",\"business reporting\",\"dashboard development\",\"creating dashboards\",\"building dashboards\",\"dashboards\"]},{\"id\":21,\"name\":\"Statistics\",\"category\":\"statistics\",\"aliases\":[\"statistical analysis\",\"descriptive statistics\",\"inferential statistics\",\"statistical methods\",\"statistical modeling\",\"statistical modelling\",\"biostatistics\",\"statistical techniques\"]},{\"id\":22,\"name\":\"Machine Learning\",\"category\":\"statistics\",\"aliases\":[\"ml algorithms\",\"predictive modeling\",\"predictive modelling\",\"supervised learning\",\"unsupervised learning\",\"machine-learning\"]},{\"id\":23,\"name\":\"A/B Testing\",\"category\":\"statistics\",\"aliases\":[\"ab testing\",\"split testing\",\"hypothesis testing\"]},{\"id\":24,\"name\":\"Regression Analysis\",\"category\":\"statistics\",\"aliases\":[\"linear regression\",\"logistic regression\",\"regression modeling\",\"regression modelling\"]},{\"id\":25,\"name\":\"Google Analytics\",\"category\":\"tools\",\"aliases\":[\"ga4\",\"google analytics 4\",\"web analytics\"]},{\"id\":26,\"name\":\"BigQuery\",\"category\":\"tools\",\"aliases\":[\"google bigquery\"]},{\"id\":27,\"name\":\"Jupyter\",\"category\":\"tools\",\"aliases\":[\"jupyter notebook\",\"jupyter notebooks\",\"jupyter lab\",\"jupyterlab\"]},{\"id\":28,\"name\":\"Communication\",\"category\":\"soft_skill\",\"aliases\":[\"communication skills\",\"written communication\",\"verbal communication\",\"interpersonal skills\",\"strong communication\"]},{\"id\":29,\"name\":\"Problem Solving\",\"category\":\"soft_skill\",\"aliases\":[\"problem-solving\",\"analytical thinking\",\"critical thinking\",\"analytical skills\"]},{\"id\":30,\"name\":\"Teamwork\",\"category\":\"soft_skill\",\"aliases\":[\"team work\",\"collaboration\",\"team player\",\"cross-functional\",\"cross functional\",\"collaborative\"]},{\"id\":31,\"name\":\"Attention to Detail\",\"category\":\"soft_skill\",\"aliases\":[\"detail-oriented\",\"detail oriented\",\"meticulous\",\"keen eye for detail\"]},{\"id\":32,\"name\":\"Presentation Skills\",\"category\":\"soft_skill\",\"aliases\":[\"presentation\",\"presenting\",\"public speaking\",\"storytelling with data\",\"data storytelling\"]},{\"id\":33,\"name\":\"Time Management\",\"category\":\"soft_skill\",\"aliases\":[\"time-management\",\"deadline management\",\"prioritization\",\"managing priorities\"]}]},\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements",
+      "method": "GET",
+      "started": 1790412333623,
+      "status": 200,
+      "responseAt": 1790412333652,
+      "finished": 1790412333653,
+      "timing": {
+        "startTime": 1790412333623.2578,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.237,
+        "responseStart": 26.347,
+        "responseEnd": 32.26
+      },
+      "body": "{\"data\":[{\"id\":1,\"role_name\":\"Junior Data Analyst\",\"skill_id\":1,\"frequency\":34,\"weight\":0.9189,\"total_postings\":37,\"skillName\":\"SQL\",\"skillCategory\":\"programming\"},{\"id\":2,\"role_name\":\"Junior Data Analyst\",\"skill_id\":7,\"frequency\":33,\"weight\":0.8919,\"total_postings\":37,\"skillName\":\"Excel\",\"skillCategory\":\"analytics\"},{\"id\":3,\"role_name\":\"Junior Data Analyst\",\"skill_id\":9,\"frequency\":24,\"weight\":0.6486,\"total_postings\":37,\"skillName\":\"Power BI\",\"skillCategory\":\"analytics\"},{\"id\":4,\"role_name\":\"Junior Data Analyst\",\"skill_id\":20,\"frequency\":24,\"weight\":0.6486,\"total_postings\":37,\"skillName\":\"Reporting\",\"skillCategory\":\"data\"},{\"id\":5,\"role_name\":\"Junior Data Analyst\",\"skill_id\":8,\"frequency\":17,\"weight\":0.4595,\"total_postings\":37,\"skillName\":\"Tableau\",\"skillCategory\":\"analytics\"},{\"id\":6,\"role_name\":\"Junior Data Analyst\",\"skill_id\":28,\"frequency\":16,\"weight\":0.4324,\"total_postings\":37,\"skillName\":\"Communication\",\"skillCategory\":\"soft_skill\"},{\"id\":7,\"role_name\":\"Junior Data Analyst\",\"skill_id\":2,\"frequency\":14,\"weight\":0.3784,\"total_postings\":37,\"skillName\":\"Python\",\"skillCategory\":\"programming\"},{\"id\":8,\"role_name\":\"Junior Data Analyst\",\"skill_id\":29,\"frequency\":13,\"weight\":0.3514,\"total_postings\":37,\"skillName\":\"Problem Solving\",\"skillCategory\":\"soft_skill\"},{\"id\":9,\"role_name\":\"Junior Data Analyst\",\"skill_id\":21,\"frequency\":12,\"weight\":0.3243,\"total_postings\":37,\"skillName\":\"Statistics\",\"skillCategory\":\"statistics\"},{\"id\":10,\"role_name\":\"Junior Data Analyst\",\"skill_id\":31,\"frequency\":9,\"weight\":0.2432,\"total_postings\":37,\"skillName\":\"Attention to Detail\",\"skillCategory\":\"soft_skill\"},{\"id\":11,\"role_name\":\"Junior Data Analyst\",\"skill_id\":14,\"frequency\":7,\"weight\":0.1892,\"total_postings\":37,\"skillName\":\"Data Cleaning\",\"skillCategory\":\"data\"},{\"id\":12,\"role_name\":\"Junior Data Analyst\",\"skill_id\":19,\"frequency\":6,\"weight\":0.1622,\"total_postings\":37,\"skillName\":\"Data Analysis\",\"skillCategory\":\"data\"},{\"id\":13,\"role_name\":\"Junior Data Analyst\",\"skill_id\":15,\"frequency\":6,\"weight\":0.1622,\"total_postings\":37,\"skillName\":\"Data Visualization\",\"skillCategory\":\"data\"},{\"id\":14,\"role_name\":\"Junior Data Analyst\",\"skill_id\":32,\"frequency\":5,\"weight\":0.1351,\"total_postings\":37,\"skillName\":\"Presentation Skills\",\"skillCategory\":\"soft_skill\"},{\"id\":15,\"role_name\":\"Junior Data Analyst\",\"skill_id\":30,\"frequency\":5,\"weight\":0.1351,\"total_postings\":37,\"skillName\":\"Teamwork\",\"skillCategory\":\"soft_skill\"},{\"id\":16,\"role_name\":\"Junior Data Analyst\",\"skill_id\":25,\"frequency\":4,\"weight\":0.1081,\"total_postings\":37,\"skillName\":\"Google Analytics\",\"skillCategory\":\"tools\"},{\"id\":17,\"role_name\":\"Junior Data Analyst\",\"skill_id\":23,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"A/B Testing\",\"skillCategory\":\"statistics\"},{\"id\":18,\"role_name\":\"Junior Data Analyst\",\"skill_id\":17,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"ETL\",\"skillCategory\":\"data\"},{\"id\":19,\"role_name\":\"Junior Data Analyst\",\"skill_id\":5,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"Pandas\",\"skillCategory\":\"programming\"},{\"id\":20,\"role_name\":\"Junior Data Analyst\",\"skill_id\":13,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"SPSS\",\"skillCategory\":\"analytics\"},{\"id\":21,\"role_name\":\"Junior Data Analyst\",\"skill_id\":26,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"BigQuery\",\"skillCategory\":\"tools\"},{\"id\":22,\"role_name\":\"Junior Data Analyst\",\"skill_id\":16,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Data Modeling\",\"skillCategory\":\"data\"},{\"id\":23,\"role_name\":\"Junior Data Analyst\",\"skill_id\":18,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Database Management\",\"skillCategory\":\"data\"},{\"id\":24,\"role_name\":\"Junior Data Analyst\",\"skill_id\":11,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Looker\",\"skillCategory\":\"analytics\"},{\"id\":25,\"role_name\":\"Junior Data Analyst\",\"skill_id\":33,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Time Management\",\"skillCategory\":\"soft_skill\"}],\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements",
+      "method": "GET",
+      "started": 1790412333623,
+      "status": 200,
+      "responseAt": 1790412333655,
+      "finished": 1790412333656,
+      "timing": {
+        "startTime": 1790412333629.894,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 20.152,
+        "responseStart": 23.911,
+        "responseEnd": 35.998
+      },
+      "body": "{\"data\":[{\"id\":1,\"role_name\":\"Junior Data Analyst\",\"skill_id\":1,\"frequency\":34,\"weight\":0.9189,\"total_postings\":37,\"skillName\":\"SQL\",\"skillCategory\":\"programming\"},{\"id\":2,\"role_name\":\"Junior Data Analyst\",\"skill_id\":7,\"frequency\":33,\"weight\":0.8919,\"total_postings\":37,\"skillName\":\"Excel\",\"skillCategory\":\"analytics\"},{\"id\":3,\"role_name\":\"Junior Data Analyst\",\"skill_id\":9,\"frequency\":24,\"weight\":0.6486,\"total_postings\":37,\"skillName\":\"Power BI\",\"skillCategory\":\"analytics\"},{\"id\":4,\"role_name\":\"Junior Data Analyst\",\"skill_id\":20,\"frequency\":24,\"weight\":0.6486,\"total_postings\":37,\"skillName\":\"Reporting\",\"skillCategory\":\"data\"},{\"id\":5,\"role_name\":\"Junior Data Analyst\",\"skill_id\":8,\"frequency\":17,\"weight\":0.4595,\"total_postings\":37,\"skillName\":\"Tableau\",\"skillCategory\":\"analytics\"},{\"id\":6,\"role_name\":\"Junior Data Analyst\",\"skill_id\":28,\"frequency\":16,\"weight\":0.4324,\"total_postings\":37,\"skillName\":\"Communication\",\"skillCategory\":\"soft_skill\"},{\"id\":7,\"role_name\":\"Junior Data Analyst\",\"skill_id\":2,\"frequency\":14,\"weight\":0.3784,\"total_postings\":37,\"skillName\":\"Python\",\"skillCategory\":\"programming\"},{\"id\":8,\"role_name\":\"Junior Data Analyst\",\"skill_id\":29,\"frequency\":13,\"weight\":0.3514,\"total_postings\":37,\"skillName\":\"Problem Solving\",\"skillCategory\":\"soft_skill\"},{\"id\":9,\"role_name\":\"Junior Data Analyst\",\"skill_id\":21,\"frequency\":12,\"weight\":0.3243,\"total_postings\":37,\"skillName\":\"Statistics\",\"skillCategory\":\"statistics\"},{\"id\":10,\"role_name\":\"Junior Data Analyst\",\"skill_id\":31,\"frequency\":9,\"weight\":0.2432,\"total_postings\":37,\"skillName\":\"Attention to Detail\",\"skillCategory\":\"soft_skill\"},{\"id\":11,\"role_name\":\"Junior Data Analyst\",\"skill_id\":14,\"frequency\":7,\"weight\":0.1892,\"total_postings\":37,\"skillName\":\"Data Cleaning\",\"skillCategory\":\"data\"},{\"id\":12,\"role_name\":\"Junior Data Analyst\",\"skill_id\":19,\"frequency\":6,\"weight\":0.1622,\"total_postings\":37,\"skillName\":\"Data Analysis\",\"skillCategory\":\"data\"},{\"id\":13,\"role_name\":\"Junior Data Analyst\",\"skill_id\":15,\"frequency\":6,\"weight\":0.1622,\"total_postings\":37,\"skillName\":\"Data Visualization\",\"skillCategory\":\"data\"},{\"id\":14,\"role_name\":\"Junior Data Analyst\",\"skill_id\":32,\"frequency\":5,\"weight\":0.1351,\"total_postings\":37,\"skillName\":\"Presentation Skills\",\"skillCategory\":\"soft_skill\"},{\"id\":15,\"role_name\":\"Junior Data Analyst\",\"skill_id\":30,\"frequency\":5,\"weight\":0.1351,\"total_postings\":37,\"skillName\":\"Teamwork\",\"skillCategory\":\"soft_skill\"},{\"id\":16,\"role_name\":\"Junior Data Analyst\",\"skill_id\":25,\"frequency\":4,\"weight\":0.1081,\"total_postings\":37,\"skillName\":\"Google Analytics\",\"skillCategory\":\"tools\"},{\"id\":17,\"role_name\":\"Junior Data Analyst\",\"skill_id\":23,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"A/B Testing\",\"skillCategory\":\"statistics\"},{\"id\":18,\"role_name\":\"Junior Data Analyst\",\"skill_id\":17,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"ETL\",\"skillCategory\":\"data\"},{\"id\":19,\"role_name\":\"Junior Data Analyst\",\"skill_id\":5,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"Pandas\",\"skillCategory\":\"programming\"},{\"id\":20,\"role_name\":\"Junior Data Analyst\",\"skill_id\":13,\"frequency\":2,\"weight\":0.0541,\"total_postings\":37,\"skillName\":\"SPSS\",\"skillCategory\":\"analytics\"},{\"id\":21,\"role_name\":\"Junior Data Analyst\",\"skill_id\":26,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"BigQuery\",\"skillCategory\":\"tools\"},{\"id\":22,\"role_name\":\"Junior Data Analyst\",\"skill_id\":16,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Data Modeling\",\"skillCategory\":\"data\"},{\"id\":23,\"role_name\":\"Junior Data Analyst\",\"skill_id\":18,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Database Management\",\"skillCategory\":\"data\"},{\"id\":24,\"role_name\":\"Junior Data Analyst\",\"skill_id\":11,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Looker\",\"skillCategory\":\"analytics\"},{\"id\":25,\"role_name\":\"Junior Data Analyst\",\"skill_id\":33,\"frequency\":1,\"weight\":0.027,\"total_postings\":37,\"skillName\":\"Time Management\",\"skillCategory\":\"soft_skill\"}],\"error\":null}"
+    },
+    {
+      "url": "http://localhost:3001/api/profile",
+      "method": "POST",
+      "started": 1790412333856,
+      "status": 201,
+      "responseAt": 1790412334031,
+      "finished": 1790412334033,
+      "timing": {
+        "startTime": 1790412333854.456,
+        "domainLookupStart": -1,
+        "domainLookupEnd": -1,
+        "connectStart": -1,
+        "secureConnectionStart": -1,
+        "connectEnd": -1,
+        "requestStart": 0.262,
+        "responseStart": 175.247,
+        "responseEnd": 179.357
+      },
+      "body": "{\"data\":{\"studentId\":47,\"message\":\"Profile saved successfully\"},\"error\":null}"
+    }
+  ],
+  "console": [
+    {
+      "type": "debug",
+      "text": "[vite] connecting...",
+      "at": 1790412332685
+    },
+    {
+      "type": "debug",
+      "text": "[vite] connected.",
+      "at": 1790412332712
+    },
+    {
+      "type": "info",
+      "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold",
+      "at": 1790412332795
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+      "at": 1790412332902
+    },
+    {
+      "type": "log",
+      "text": "PROFILE RES {data: Object, error: null}",
+      "at": 1790412334033
+    }
+  ]
+}

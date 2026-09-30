@@ -1,0 +1,181 @@
+{
+  "skills": [
+    [
+      "SQL",
+      "course"
+    ],
+    [
+      "Python",
+      "course"
+    ],
+    [
+      "Excel",
+      "project"
+    ],
+    [
+      "Tableau",
+      "project"
+    ],
+    [
+      "Data Cleaning",
+      "project"
+    ],
+    [
+      "Statistics",
+      "course"
+    ],
+    [
+      "Communication",
+      "self_declared"
+    ]
+  ],
+  "result": {
+    "analysisId": 109,
+    "readinessScore": 58.1,
+    "gaps": [
+      {
+        "skillId": 9,
+        "skillName": "Power BI",
+        "gapWeight": 0.6486,
+        "priorityRank": 1
+      },
+      {
+        "skillId": 20,
+        "skillName": "Reporting",
+        "gapWeight": 0.6486,
+        "priorityRank": 2
+      },
+      {
+        "skillId": 29,
+        "skillName": "Problem Solving",
+        "gapWeight": 0.3514,
+        "priorityRank": 3
+      },
+      {
+        "skillId": 31,
+        "skillName": "Attention to Detail",
+        "gapWeight": 0.2432,
+        "priorityRank": 4
+      },
+      {
+        "skillId": 28,
+        "skillName": "Communication",
+        "gapWeight": 0.2162,
+        "priorityRank": 5
+      },
+      {
+        "skillId": 19,
+        "skillName": "Data Analysis",
+        "gapWeight": 0.1622,
+        "priorityRank": 6
+      },
+      {
+        "skillId": 15,
+        "skillName": "Data Visualization",
+        "gapWeight": 0.1622,
+        "priorityRank": 7
+      },
+      {
+        "skillId": 32,
+        "skillName": "Presentation Skills",
+        "gapWeight": 0.1351,
+        "priorityRank": 8
+      },
+      {
+        "skillId": 30,
+        "skillName": "Teamwork",
+        "gapWeight": 0.1351,
+        "priorityRank": 9
+      },
+      {
+        "skillId": 25,
+        "skillName": "Google Analytics",
+        "gapWeight": 0.1081,
+        "priorityRank": 10
+      },
+      {
+        "skillId": 23,
+        "skillName": "A/B Testing",
+        "gapWeight": 0.0541,
+        "priorityRank": 11
+      },
+      {
+        "skillId": 17,
+        "skillName": "ETL",
+        "gapWeight": 0.0541,
+        "priorityRank": 12
+      },
+      {
+        "skillId": 5,
+        "skillName": "Pandas",
+        "gapWeight": 0.0541,
+        "priorityRank": 13
+      },
+      {
+        "skillId": 13,
+        "skillName": "SPSS",
+        "gapWeight": 0.0541,
+        "priorityRank": 14
+      },
+      {
+        "skillId": 26,
+        "skillName": "BigQuery",
+        "gapWeight": 0.027,
+        "priorityRank": 15
+      },
+      {
+        "skillId": 16,
+        "skillName": "Data Modeling",
+        "gapWeight": 0.027,
+        "priorityRank": 16
+      },
+      {
+        "skillId": 18,
+        "skillName": "Database Management",
+        "gapWeight": 0.027,
+        "priorityRank": 17
+      },
+      {
+        "skillId": 11,
+        "skillName": "Looker",
+        "gapWeight": 0.027,
+        "priorityRank": 18
+      },
+      {
+        "skillId": 33,
+        "skillName": "Time Management",
+        "gapWeight": 0.027,
+        "priorityRank": 19
+      }
+    ],
+    "roadmap": [
+      {
+        "skillId": 20,
+        "skillName": "Reporting",
+        "sequenceOrder": 1,
+        "title": "Master Reporting",
+        "description": "This skill has a gap weight of 65% based on market demand. Focusing on Reporting will significantly improve your readiness for the Junior Data Analyst role.",
+        "assessmentIdea": "Complete a hands-on project utilizing Reporting and upload it to your portfolio.",
+        "estimatedHours": 20
+      },
+      {
+        "skillId": 9,
+        "skillName": "Power BI",
+        "sequenceOrder": 2,
+        "title": "Master Power BI",
+        "description": "This skill has a gap weight of 65% based on market demand. Focusing on Power BI will significantly improve your readiness for the Junior Data Analyst role.",
+        "assessmentIdea": "Complete a hands-on project utilizing Power BI and upload it to your portfolio.",
+        "estimatedHours": 20
+      },
+      {
+        "skillId": 29,
+        "skillName": "Problem Solving",
+        "sequenceOrder": 3,
+        "title": "Master Problem Solving",
+        "description": "This skill has a gap weight of 35% based on market demand. Focusing on Problem Solving will significantly improve your readiness for the Junior Data Analyst role.",
+        "assessmentIdea": "Prepare a mock presentation or write a case study demonstrating your Problem Solving skills.",
+        "estimatedHours": 10
+      }
+    ]
+  }
+}

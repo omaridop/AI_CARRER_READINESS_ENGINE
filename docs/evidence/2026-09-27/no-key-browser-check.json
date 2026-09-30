@@ -1,0 +1,55 @@
+{
+  "configuration": "Tutor requests forwarded to isolated real backend on 3002 with both keys absent",
+  "rows": [
+    {
+      "label": "Simple",
+      "status": 200,
+      "ms": 148.121,
+      "skill": "Power BI",
+      "style": "simple",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 611
+    },
+    {
+      "label": "Visual",
+      "status": 200,
+      "ms": 10.279,
+      "skill": "Power BI",
+      "style": "visual",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 913
+    },
+    {
+      "label": "Example-based",
+      "status": 200,
+      "ms": 9.201,
+      "skill": "Power BI",
+      "style": "example",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 72
+    },
+    {
+      "label": "Step-by-step",
+      "status": 200,
+      "ms": 8.2,
+      "skill": "Power BI",
+      "style": "step_by_step",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 678
+    },
+    {
+      "label": "Arabic",
+      "status": 200,
+      "ms": 6.955,
+      "skill": "Power BI",
+      "style": "arabic",
+      "source": "fallback",
+      "visibleBadge": "🛡️\nCurated Example",
+      "textLength": 486
+    }
+  ]
+}

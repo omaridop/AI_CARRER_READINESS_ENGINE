@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-09-28T01:02:00.605Z",
+  "query": {
+    "page": 0,
+    "limit": 3,
+    "job_country_code_or": [
+      "JO"
+    ],
+    "job_title_or": [
+      "data analyst"
+    ],
+    "posted_at_gte": "2026-06-30",
+    "posted_at_lte": "2026-09-28",
+    "include_total_results": true
+  },
+  "status": 200,
+  "metadata": {
+    "total_results": 5,
+    "truncated_results": 0,
+    "truncated_companies": 0,
+    "total_companies": 4
+  },
+  "jobs": [
+    {
+      "id": 841496465,
+      "title": "Sr. Data Analyst",
+      "country": "Jordan",
+      "location": "Jordan",
+      "date": "2026-09-14",
+      "url": "https://iaavas.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/134",
+      "descriptionCharacters": 2539
+    },
+    {
+      "id": 810077824,
+      "title": "Data & Visualization Analyst",
+      "country": "Jordan",
+      "location": "Amman, Amman, Jordan",
+      "date": "2026-08-19",
+      "url": "https://apgecommerce.bamboohr.com/careers/228",
+      "descriptionCharacters": 3768
+    },
+    {
+      "id": 800481890,
+      "title": "Senior Data Governance Analyst",
+      "country": "Jordan",
+      "location": "Amman",
+      "date": "2026-08-12",
+      "url": "https://jobs.workable.com/view/6TN94i252PbdnGaK21nfz4/senior-data-governance-analyst-in-amman-at-optimiza",
+      "descriptionCharacters": 3992
+    }
+  ]
+}

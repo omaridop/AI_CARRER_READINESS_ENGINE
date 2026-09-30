@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-09-28T01:02:44.671Z",
+  "query": {
+    "page": 0,
+    "limit": 3,
+    "job_country_code_or": [
+      "JO"
+    ],
+    "job_title_or": [
+      "data analyst"
+    ],
+    "job_title_not": [
+      "senior",
+      "sr",
+      "lead",
+      "manager",
+      "head",
+      "principal"
+    ],
+    "posted_at_gte": "2025-09-28",
+    "posted_at_lte": "2026-09-28",
+    "include_total_results": true
+  },
+  "status": 200,
+  "metadata": {
+    "total_results": 18,
+    "truncated_results": 0,
+    "truncated_companies": 0,
+    "total_companies": 13
+  },
+  "jobs": [
+    {
+      "id": 810077824,
+      "title": "Data & Visualization Analyst",
+      "country": "Jordan",
+      "location": "Amman, Amman, Jordan",
+      "date": "2026-08-19",
+      "url": "https://apgecommerce.bamboohr.com/careers/228",
+      "descriptionCharacters": 3768,
+      "experienceLines": [
+        "Deliver high-impact, user-friendly visual analytics solutions using Looker, Looker Studio, and Tableau. Leverage GCP infrastructure to support scalable, secure, and performant data experiences. Collaborate with business stakeholders to translate analytical needs into actionable insights and support conversational AI integrations.",
+        "- Support conversational AI experiences using Looker’s embedded analytics and natural language querying",
+        "- AI Integration: Experience with conversational analytics, embedded Looker, and natural language query tools",
+        "Education: Bachelor’s degree in Data Science, Computer Science, Business Analytics, or related field (or equivalent practical experience)",
+        "Experience: 3+ years in data visualisation and analytics, with demonstrable expertise in Looker and GCP",
+        "- Strong SQL skills and experience with BigQuery",
+        "- Experience with GCP services and secure data access protocols"
+      ]
+    },
+    {
+      "id": 800481441,
+      "title": "Data Solutions Analyst / Scientist",
+      "country": "Jordan",
+      "location": "Amman, Amman, Jordan",
+      "date": "2026-08-12",
+      "url": "https://apgecommerce.bamboohr.com/careers/223",
+      "descriptionCharacters": 4214,
+      "experienceLines": [
+        "- 5+ years’ experience in forecasting, data science or advanced analytics (ideally within logistics, supply chain or operations)",
+        "- Strong experience building forecasting models using time series, regression or machine learning techniques",
+        "- Experience working with large, complex, multi-source datasets",
+        "- Advanced SQL capability and experience with cloud platforms (e.g. GCP, BigQuery)",
+        "- Experience with Python/R or forecasting tools (e.g. Prophet, ARIMA, XGBoost)",
+        "- Experience with analytics engineering practices (testing, Git, CI/CD workflows)"
+      ]
+    },
+    {
+      "id": 795218534,
+      "title": "Data Analyst - Retail",
+      "country": "Jordan",
+      "location": "Amman",
+      "date": "2026-08-05",
+      "url": "https://www.linkedin.com/jobs/view/4447393525/",
+      "descriptionCharacters": 1752,
+      "experienceLines": [
+        "• 3+ years of experience in data analysis or business intelligence.",
+        "• Experience with Power BI, Tableau, or Looker.",
+        "• Experience working with large datasets and relational databases.",
+        "• Experience in retail or e-commerce is considered a strong advantage.",
+        "*\\*Antal Jordan is continuously identifying high-calibre professionals for upcoming recruitment projects and confidential mandates on behalf of local and international organisations. If your experience aligns with future client requirements, we will contact you as relevant opportunities become available. We encourage you to submit your profile and become part of our professional talent network.*"
+      ]
+    }
+  ]
+}

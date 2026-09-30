@@ -1,0 +1,97 @@
+{
+  "reviewed_on": "2026-09-28",
+  "target_role": "Junior Data Analyst",
+  "scope": "Historical Jordan junior/early-career analyst requirement references; not current vacancies or representative market statistics",
+  "imported": false,
+  "content_type": "Manually reviewed factual metadata and paraphrased summaries, not original full descriptions; do not run keyword-frequency scoring on these summaries",
+  "inclusion_policy": "Jordan location; analyst/reporting/BI duties; explicit junior title or experience range beginning at 0–1 years. BI role adjacency is disclosed. Older adverts retained with age caveats. Unknown employer or broad hybrid duties held separately. A reviewed record is not a permission-to-republish determination.",
+  "records": [
+    {
+      "id": "zain-174503", "decision": "reviewed", "source_label": "real",
+      "title": "Business Intelligence Team Member", "company": "Zain Jordan", "location": "Amman, Jordan",
+      "source_kind": "employer_careers", "source_url": "https://careers.zain.com/vacancy/174503",
+      "date_posted": null, "closing_date": "2026-02-24", "status": "deadline_passed",
+      "experience_min_years": 0, "experience_max_years": 2,
+      "role_fit": "Adjacent BI/reporting role with analyst duties",
+      "summary": "Develop reports and dashboards, prepare warehouse data, clarify business metrics, and check reporting quality. Relevant degree and BI-related certification requested.",
+      "observed_skills": ["SQL", "Power BI", "Tableau", "Reporting", "Data Visualization", "Data Validation", "Requirements Gathering"],
+      "optional_skills": [], "existing_dataset_match": null,
+      "limitations": ["Closed by deadline", "BI role rather than exact Data Analyst title", "Publication date unknown"]
+    },
+    {
+      "id": "wuduh-zenats-is15", "decision": "reviewed", "source_label": "real",
+      "title": "Junior Data Analyst", "company": "WUDUH", "location": "Jordan",
+      "source_kind": "employer_ats", "source_url": "https://app.zenats.com/en/public_job/is15-4sJm6DfGuB0oj9tjA",
+      "date_posted": "2025-04-25", "closing_date": null, "status": "explicitly_closed",
+      "experience_min_years": null, "experience_max_years": null,
+      "role_fit": "Explicit junior analyst title",
+      "summary": "Support research through data preparation, basic statistical work, reporting and dashboards. Communicate findings and maintain data quality. Eligibility limited to Jordanian nationals and individuals born to Jordanian mothers.",
+      "observed_skills": ["Python", "SQL", "Statistics", "Git", "Data Visualization", "Data Cleaning", "Communication", "Attention to Detail"],
+      "optional_skills": [], "existing_dataset_match": null,
+      "limitations": ["Closed", "Older than one year", "Numeric experience requirement unspecified", "Do not infer guaranteed graduate eligibility"]
+    },
+    {
+      "id": "kalamntina-junior-data-analyst", "decision": "reviewed", "source_label": "real",
+      "title": "Junior Data Analyst", "company": "Confidential via Kalamntina", "location": "Amman, Jordan",
+      "source_kind": "named_recruiter", "source_url": "https://kalamntina.com/vacancies/junior-data-analyst",
+      "date_posted": "2025-10-14", "closing_date": null, "status": "unknown",
+      "experience_min_years": 1, "experience_max_years": 3,
+      "role_fit": "Junior supply-chain analytics specialization",
+      "summary": "Assist planning cycles and supply-chain performance reporting. Prepare reliable planning data and maintain Power BI dashboards. Relevant supply-chain, engineering or analytics degree requested.",
+      "observed_skills": ["Power BI", "Data Cleaning", "Data Validation", "Problem Solving", "Communication"],
+      "optional_skills": ["Excel", "ERP", "Planning Tools"],
+      "existing_dataset_match": "backend/src/data/job-postings.ts real entry 3; retain once, do not append duplicate",
+      "duplicate_sources": ["https://www.naukrigulf.com/data-analyst-jobs-in-amman-jordan-in-client-of-kalamntina-1-to-5-years-n-cd-50000133-jid-311025500123"],
+      "limitations": ["Employer confidential", "One year minimum, not graduate-only", "Open status unverified", "Naukrigulf header differs; recruiter body specifies 1–3 years"]
+    },
+    {
+      "id": "transition-tech-3851288421", "decision": "reviewed", "source_label": "real",
+      "title": "Data Analyst", "company": "Transition TECH", "location": "Amman, Jordan",
+      "source_kind": "named_employer_job_post", "source_url": "https://jo.linkedin.com/jobs/view/data-analyst-at-transition-tech-3851288421",
+      "date_posted": null, "date_note": "Page displays approximately two years ago; exact date not inferred", "closing_date": null, "status": "explicitly_closed",
+      "experience_min_years": 1, "experience_max_years": 2,
+      "role_fit": "Early-career analyst with BI specialization",
+      "summary": "Requires a related degree, BI/database skills, analytical reasoning and written/spoken English. Microsoft PL-300 certification is preferred.",
+      "observed_skills": ["Power BI", "SQL", "DAX", "Problem Solving", "Critical Thinking", "English"],
+      "optional_skills": ["PL-300 Certification"], "existing_dataset_match": null,
+      "limitations": ["Closed", "Approximately two years old", "Exact date unknown", "One year minimum"]
+    },
+    {
+      "id": "tabsense-3858539862", "decision": "reviewed", "source_label": "real",
+      "title": "Data Analyst", "company": "TABsense", "location": "Amman, Jordan",
+      "source_kind": "named_employer_job_post", "source_url": "https://jo.linkedin.com/jobs/view/data-analyst-at-tabsense-3858539862",
+      "date_posted": null, "date_note": "Page displays approximately two years ago; exact date not inferred", "closing_date": null, "status": "explicitly_closed",
+      "experience_min_years": 1, "experience_max_years": 2,
+      "role_fit": "Early-career product/business analytics",
+      "summary": "Automate reports, interpret business performance, communicate findings and test growth ideas. Requires analytical experience and at least a year building BI dashboards; strong SQL and working Python knowledge.",
+      "observed_skills": ["SQL", "Python", "Reporting", "Data Visualization", "Communication", "Attention to Detail", "A/B Testing"],
+      "alternative_tools": ["Tableau", "Power BI", "MicroStrategy", "Looker"],
+      "optional_skills": ["ETL/ELT", "Dimensional Data", "Data Lakes"], "existing_dataset_match": null,
+      "limitations": ["Closed", "Approximately two years old", "Exact date unknown", "One year minimum", "Listed BI tools are alternatives, not all mandatory"]
+    },
+    {
+      "id": "confidential-4290482276", "decision": "conditional", "source_label": "real",
+      "title": "Data Analyst - Fresh Graduates", "company": "Confidential", "location": "Amman, Jordan",
+      "source_kind": "anonymous_job_post", "source_url": "https://jo.linkedin.com/jobs/view/data-analyst-fresh-graduates-at-confidential-4290482276",
+      "date_posted": null, "date_note": "Relative date approximately one year; exact date unknown", "closing_date": null, "status": "explicitly_closed",
+      "experience_min_years": 0, "experience_max_years": 2,
+      "role_fit": "Explicit graduate analyst; employer provenance weaker",
+      "summary": "Prepare and analyze business data, support dashboards and reporting, and maintain reliable data processes. Relevant computing degree and Arabic/English communication requested.",
+      "observed_skills": ["SQL", "Excel", "Data Visualization", "Problem Solving", "Arabic", "English"],
+      "alternative_tools": ["Power BI", "Tableau"], "optional_skills": ["Python", "R"], "existing_dataset_match": null,
+      "limitations": ["Employer identity unverified", "Cross-employer duplication cannot be conclusively ruled out", "Closed", "Exact date unknown"]
+    },
+    {
+      "id": "aig-7439655186182062080", "decision": "conditional", "source_label": "real",
+      "title": "BI & Data Analyst", "company": "Airport International Group", "location": "Queen Alia International Airport, Jordan",
+      "source_kind": "employer_social_post", "source_url": "https://www.linkedin.com/posts/airport-international-group-aig-_we-are-looking-for-qualified-candidates-to-activity-7439655186182062080-GaX5",
+      "date_posted": null, "closing_date": null, "status": "unknown",
+      "experience_min_years": 0, "experience_max_years": 2,
+      "role_fit": "BI analyst with unusually broad infrastructure responsibilities; needs full-description review",
+      "summary": "Employer announcement specifies an early-career BI/data role with data preparation, database and dashboard work, alongside IT operations responsibilities. Relevant degree and data-related certificates listed.",
+      "observed_skills": ["SQL", "Power BI", "Data Cleaning", "Statistics", "Database Management", "ETL", "Dashboard Design"],
+      "optional_skills": [], "existing_dataset_match": null,
+      "limitations": ["Full career-portal link inaccessible during review", "Post covers multiple vacancies; only BI section summarized", "Broad role scope", "Date and current availability unknown"]
+    }
+  ]
+}

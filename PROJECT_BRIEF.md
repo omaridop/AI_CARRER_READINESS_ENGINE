@@ -44,8 +44,10 @@ These are non-negotiable constraints that apply to all code, comments, and docum
    roadmap ordering must be **deterministic and fully explainable/traceable** to data in
    the database. They must **never** be produced or approximated by an LLM.
 
-3. **AI/LLM scope:** The AI (Anthropic Claude) is used **only** for:
+3. **AI/LLM scope:** The AI (OpenRouter routing to DeepSeek V4.1 Flash, selected by the user on September 27, 2026) is used **only** for:
    - Generating tutor explanations.
+   - On-demand course discovery using web-search citations for a selected skill
+     (explicitly requested September 27, 2026). Course suggestions never affect scoring.
    - Optionally, as an *assist* pass on top of a deterministic skill-extraction pass from
      job postings — **never as the sole source** of the requirement set.
 
@@ -67,7 +69,10 @@ Do **not** build any of the following, even if they seem easy:
 - Job-board, social-network, or employer-facing features
 - Automated hiring decisions or an "employment probability" model
 - Full learning management system (courses, progress tracking, certificate issuance)
-- Live web scraping of job sites
+- ~~Live web scraping of job sites~~ — **Overridden September 29, 2026:** User authorized
+  a Playwright-based offline scraping utility for Bayt.com, Akhtaboot, and LinkedIn
+  public jobs. Scraped postings enter the dataset as `source_label: 'real'` with their
+  actual `source_name`. Scraping is a separate CLI tool, not a live runtime feature.
 - Multi-language production support (Arabic is only one tutor explanation style, not
   full i18n)
 - Cloud infrastructure, CI/CD pipelines, containerization, microservices — this runs
@@ -105,7 +110,7 @@ Every design decision should be weighed against this rubric:
 | Frontend | React + TypeScript, Vite, Tailwind CSS |
 | Backend | Node.js + Express + TypeScript |
 | Database | SQLite (file-based, via `better-sqlite3`) |
-| AI | Anthropic API (Claude) — called only from the tutor service, behind a validated JSON-schema interface with a deterministic fallback if the call fails |
+| AI | OpenRouter (`deepseek/deepseek-v4.1-flash`) — called only from the tutor service, behind a validated JSON-schema interface with a deterministic fallback if the call fails |
 
 ---
 
@@ -160,5 +165,14 @@ npm run lint
 
 ## 9. Current Status
 
-**Phase 0 — Scaffolding complete.**
-No feature logic, database schema, UI screens, or API routes have been implemented.
+**MVP implemented; human rehearsal remains a separate gate.**
+The six-screen flow, deterministic scoring, local database, roadmap and five tutor
+styles exist. September 26–27 browser diagnosis corrected the Analysis lifecycle
+stall and Results/Tutor contract mismatches. See `docs/VERIFICATION_2026-09-27.md`
+for measured results and open risks.
+
+The former Claude 3 Haiku route returned a deprecation error. The user explicitly
+selected DeepSeek V4.1 Flash through OpenRouter on September 27. This supersedes
+historical Claude references in earlier phase reports. No direct Anthropic API
+usage is claimed. Scoring, SQLite, scope, the error boundary and source badges
+remain intentional designs.
