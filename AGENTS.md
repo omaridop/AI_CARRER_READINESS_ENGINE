@@ -315,3 +315,11 @@ Run checks appropriate to actual changes. Do not run seed to 'fix' diagnosis. Do
   2. **Item 10 (Python FastAPI backend):** Explicitly skipped. Rewriting the Node/Express backend to Python FastAPI violates the strict project constraints ("Keep React/TypeScript/Vite/Tailwind, Node/Express/TypeScript, and local SQLite via better-sqlite3").
 - Validation: Ran `npm run build --workspace=frontend` which compiled successfully.
 - Remaining: Code changes are done. No remaining features from the SkillGap finder spec are pending. Human rehearsal and GitHub publication still pending.
+
+### 2026-10-01 — Interactive Live Job Match Explorer
+- Request: Make the Job Match tab interactive for Magic Mode custom jobs instead of just bypassing it.
+- Work Executed:
+  - `backend/src/routes/live.routes.ts`: Modified the Magic Mode pipeline to return the full array of raw scraped job postings (`topJobs`) alongside the AI-extracted skills.
+  - `frontend/src/screens/4_JobMatch.tsx`: Rebuilt the UI logic to intercept these freshly scraped live postings. The UI now dynamically calculates virtual semantic match scores on the fly by cross-referencing the user's skills against the specific AI-discovered skills extracted from those live job descriptions.
+  - Deployed this fully dynamic matching system without breaking the existing static database fallback for the hardcoded "Junior Data Analyst" role.
+- Validation: Successfully rebuilt the frontend and pushed all updates to the public GitHub repository.
