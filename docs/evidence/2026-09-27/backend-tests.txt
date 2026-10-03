@@ -1,0 +1,111 @@
+
+> backend@0.1.0 test
+> tsx --test src/__tests__/*.test.ts
+
+▶ computeSkillFrequencies
+  ✔ counts skill appearances across postings correctly (21.0007ms)
+  ✔ sorts results by weight descending (2.3176ms)
+  ✔ handles empty extractions (0.6716ms)
+  ✔ throws on totalPostings <= 0 (1.1987ms)
+  ✔ computes single-posting case correctly (0.4186ms)
+  ✔ weight = frequency / totalPostings (verified with 10 postings) (0.7312ms)
+✔ computeSkillFrequencies (28.4458ms)
+▶ buildRoleRequirements
+  ✔ maps taxonomy indices to DB skill IDs (0.339ms)
+✔ buildRoleRequirements (0.5599ms)
+▶ AnalysisService Formula
+  ✔ computes readiness score exactly according to the core threshold formula (3.0387ms)
+  ✔ caps the readiness score at 100% for a full-evidence top-core-skills profile (0.8232ms)
+✔ AnalysisService Formula (6.1015ms)
+▶ API Integration
+  ✔ POST /analysis returns 404 for unknown role (201.7935ms)
+  ✔ GET /roles/:id/requirements returns 404 for unknown role (13.4686ms)
+  ✔ POST /profile validates input shape (7.7237ms)
+  ✔ End-to-End: POST /profile -> POST /analysis (38.0637ms)
+✔ API Integration (276.9046ms)
+▶ data provenance
+  ✔ dataset has at least 30 postings (MVP minimum) (2.1701ms)
+  ✔ dataset has at most 50 postings (MVP scope) (0.3267ms)
+  ✔ every posting has a valid source_label ("real" or "sample") (0.373ms)
+  ✔ no posting has a blank or empty source_label (0.3734ms)
+  ✔ every posting has a non-empty source_name (0.4529ms)
+  ✔ every posting has a non-empty description (0.3767ms)
+  ✔ every posting has a non-empty title (0.4962ms)
+  ✔ fails loudly if zero real postings exist (all-synthetic dataset) (0.6693ms)
+  ✔ source_label values are exactly "real" or "sample" (no typos) (0.6429ms)
+✔ data provenance (9.4594ms)
+▶ normalizeAlias
+  ✔ maps canonical name to itself (1.4302ms)
+  ✔ maps known aliases to their canonical skill (case-insensitive) (0.2335ms)
+  ✔ maps Excel aliases correctly (0.2171ms)
+  ✔ maps data cleaning aliases correctly (0.2904ms)
+  ✔ maps soft skill aliases correctly (0.2616ms)
+  ✔ returns null for unknown aliases (0.2693ms)
+✔ normalizeAlias (4.7995ms)
+▶ extractSkills
+  ✔ extracts SQL, Python, and Excel from a typical posting (6.3734ms)
+  ✔ extracts Power BI from various spellings (4.8291ms)
+  ✔ does NOT false-positive on SQL inside MySQL (0.7159ms)
+  ✔ does NOT false-positive on "R" in normal English words (0.7553ms)
+  ✔ extracts R Programming from explicit mentions (0.5238ms)
+  ✔ deduplicates skills when multiple aliases match (0.3954ms)
+  ✔ handles case-insensitive matching (0.3838ms)
+  ✔ extracts soft skills from natural language (0.3552ms)
+  ✔ returns empty array for irrelevant text (0.1877ms)
+✔ extractSkills (15.6265ms)
+▶ GET /api/skills
+  ✔ returns the full taxonomy from the database with aliases (132.6197ms)
+✔ GET /api/skills (144.4759ms)
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/simple — using fallback
+[ai-client] API call failed: OpenRouter API error 429: Controlled rate limit
+[tutor-service] No AI response for Excel/visual — using fallback
+[tutor-schema] Failed to parse AI response as JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+[tutor-service] AI response failed validation for SQL/step_by_step — using fallback
+▶ Tutor provider failures (controlled; no external calls)
+  ✔ missing both keys uses fallback without a network call (7.8556ms)
+  ✔ provider 429 keeps skill/style and identifies fallback (47.9319ms)
+  ✔ malformed model JSON never becomes a live response (4.0466ms)
+[ai-client] Request timed out after 10000ms
+[tutor-service] No AI response for SQL/simple — using fallback
+  ✔ times out a stalled response body after headers have arrived (10012.292ms)
+✔ Tutor provider failures (controlled; no external calls) (10074.9717ms)
+[tutor-schema] Missing or empty "style" field
+[tutor-schema] "explanation_text" must be a string with ≥50 characters, got: 10 chars
+[tutor-schema] Failed to parse AI response as JSON: Unexpected token 'T', "This is ju"... is not valid JSON
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/simple — using fallback
+▶ Phase C: Adaptive Tutor Tests
+  ▶ 1. Schema Validation
+    ✔ accepts valid JSON matching the schema (1.2656ms)
+    ✔ rejects JSON with missing required fields (0.6452ms)
+    ✔ rejects JSON with explanation_text < 50 chars (0.3594ms)
+    ✔ handles malformed JSON (not parsable) (0.3031ms)
+    ✔ successfully parses JSON enclosed in markdown fences (simulating LLM output) (0.2054ms)
+  ✔ 1. Schema Validation (3.7743ms)
+  ▶ 2. Fallback Mechanism
+    ✔ provides fallback content for top 9 curated skills across all 5 styles (0.4343ms)
+    ✔ provides a generic fallback for unknown skills (0.3327ms)
+  ✔ 2. Fallback Mechanism (1.1046ms)
+  ▶ 3. TutorService Orchestration
+    ✔ falls back seamlessly when ANTHROPIC_API_KEY is not set (0.9527ms)
+  ✔ 3. TutorService Orchestration (1.257ms)
+  ▶ 4. API Endpoint Integration
+    ✔ POST /tutor/explain rejects missing skillName (147.4036ms)
+    ✔ POST /tutor/explain rejects invalid style (15.0577ms)
+[ai-client] No API keys set (OPENROUTER_API_KEY missing) — AI tutor will use fallback content only.
+[ai-client] No API key available — skipping AI call.
+[tutor-service] No AI response for SQL/visual — using fallback
+    ✔ POST /tutor/explain returns explanation for valid request (fallback path expected locally without key) (9.2373ms)
+  ✔ 4. API Endpoint Integration (172.1786ms)
+✔ Phase C: Adaptive Tutor Tests (186.3003ms)
+ℹ tests 53
+ℹ suites 14
+ℹ pass 53
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 12410.0708

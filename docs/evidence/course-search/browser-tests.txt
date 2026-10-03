@@ -1,0 +1,89 @@
+
+Running 15 tests using 1 worker
+
+(node:9868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [Microsoft Edge] › tests\course-search.spec.ts:26:1 › search is on demand, rapid clicks deduplicate, citations and cache labels display on mobile (3.2s)
+  ok  2 [Microsoft Edge] › tests\course-search.spec.ts:55:1 › invalid URLs fail closed; retry displays explicit fallback search links (3.0s)
+  ok  3 [Microsoft Edge] › tests\course-search.spec.ts:72:1 › reset during course research cannot restore stale results (2.5s)
+  ok  4 [Microsoft Edge] › tests\course-search.spec.ts:89:1 › unknown and malformed skills are rejected before research (85ms)
+  ok  5 [Microsoft Edge] › tests\crash-regression.spec.ts:3:1 › Regression: Step 2 renders market requirements without crashing (921ms)
+>> GET http://localhost:5173/
+<< 200 http://localhost:5173/
+>> GET http://localhost:5173/@vite/client
+>> GET http://localhost:5173/src/main.tsx
+>> GET http://localhost:5173/@react-refresh
+<< 200 http://localhost:5173/src/main.tsx
+>> GET http://localhost:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=e7edcf26
+>> GET http://localhost:5173/node_modules/.vite/deps/react.js?v=e7edcf26
+>> GET http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7edcf26
+>> GET http://localhost:5173/src/App.tsx
+>> GET http://localhost:5173/src/index.css
+>> GET http://localhost:5173/src/context/WizardContext.tsx
+<< 200 http://localhost:5173/@vite/client
+>> GET http://localhost:5173/@fs/C:/Users/epico/OneDrive/Documentos/Desktop/AI_CAREER_READINESS_PROJECT/node_modules/vite/dist/client/env.mjs
+<< 200 http://localhost:5173/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=e7edcf26
+<< 200 http://localhost:5173/node_modules/.vite/deps/react.js?v=e7edcf26
+<< 200 http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=e7edcf26
+>> GET http://localhost:5173/node_modules/.vite/deps/chunk-7MWJYWZE.js?v=e7edcf26
+>> GET http://localhost:5173/node_modules/.vite/deps/chunk-TBBDLHAM.js?v=e7edcf26
+<< 200 http://localhost:5173/src/index.css
+<< 200 http://localhost:5173/src/App.tsx
+<< 200 http://localhost:5173/src/context/WizardContext.tsx
+<< 200 http://localhost:5173/@fs/C:/Users/epico/OneDrive/Documentos/Desktop/AI_CAREER_READINESS_PROJECT/node_modules/vite/dist/client/env.mjs
+<< 200 http://localhost:5173/@react-refresh
+>> GET http://localhost:5173/src/components/common/ErrorBoundary.tsx
+>> GET http://localhost:5173/src/components/StepIndicator.tsx
+>> GET http://localhost:5173/src/screens/1_StudentProfile.tsx
+>> GET http://localhost:5173/src/screens/2_TargetRole.tsx
+>> GET http://localhost:5173/src/screens/3_EvidenceMapper.tsx
+>> GET http://localhost:5173/src/screens/4_AnalysisLoading.tsx
+>> GET http://localhost:5173/src/screens/5_ResultsDashboard.tsx
+>> GET http://localhost:5173/src/screens/6_AdaptiveTutor.tsx
+>> GET http://localhost:5173/src/hooks/useApi.ts
+BROWSER CONSOLE: [vite] connecting...
+BROWSER CONSOLE: [vite] connected.
+<< 200 http://localhost:5173/src/components/StepIndicator.tsx
+<< 200 http://localhost:5173/src/components/common/ErrorBoundary.tsx
+<< 200 http://localhost:5173/node_modules/.vite/deps/chunk-7MWJYWZE.js?v=e7edcf26
+<< 200 http://localhost:5173/src/screens/3_EvidenceMapper.tsx
+<< 200 http://localhost:5173/src/screens/2_TargetRole.tsx
+<< 200 http://localhost:5173/src/screens/1_StudentProfile.tsx
+>> GET http://localhost:5173/src/components/common/ErrorMessage.tsx
+<< 200 http://localhost:5173/src/screens/4_AnalysisLoading.tsx
+>> GET http://localhost:5173/src/utils/api.ts
+<< 200 http://localhost:5173/src/hooks/useApi.ts
+<< 200 http://localhost:5173/src/screens/6_AdaptiveTutor.tsx
+<< 200 http://localhost:5173/src/components/common/ErrorMessage.tsx
+<< 200 http://localhost:5173/src/utils/api.ts
+<< 200 http://localhost:5173/src/screens/5_ResultsDashboard.tsx
+>> GET http://localhost:5173/src/components/CourseRecommendations.tsx
+<< 200 http://localhost:5173/src/components/CourseRecommendations.tsx
+<< 200 http://localhost:5173/node_modules/.vite/deps/chunk-TBBDLHAM.js?v=e7edcf26
+BROWSER CONSOLE: %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold
+>> GET http://localhost:3001/api/skills
+>> GET http://localhost:3001/api/skills
+<< 200 http://localhost:3001/api/skills
+<< 200 http://localhost:3001/api/skills
+>> GET http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements
+>> GET http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements
+<< 200 http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements
+<< 200 http://localhost:3001/api/roles/Junior%20Data%20Analyst/requirements
+>> POST http://localhost:3001/api/profile
+<< 201 http://localhost:3001/api/profile
+>> POST http://localhost:3001/api/analysis
+<< 201 http://localhost:3001/api/analysis
+Analysis Step took 104 ms
+  ok  6 [Microsoft Edge] › tests\measure.spec.ts:3:1 › Measure analysis time (1.7s)
+Six real browser runs: [{"elapsedMs":102,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]},{"elapsedMs":80,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]},{"elapsedMs":80,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]},{"elapsedMs":68,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]},{"elapsedMs":80,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]},{"elapsedMs":80,"requests":["http://localhost:3001/api/profile","http://localhost:3001/api/analysis"]}]
+  ok  7 [Microsoft Edge] › tests\reliability.spec.ts:16:1 › fresh load and five resets reach real Results with one pair of POSTs each (9.6s)
+  ok  8 [Microsoft Edge] › tests\reliability.spec.ts:44:1 › leaving Analysis before its response cannot overwrite the reset profile (1.7s)
+  ok  9 [Microsoft Edge] › tests\reliability.spec.ts:64:1 › delayed requirements render safely and input validation survives reset (2.0s)
+  ok 10 [Microsoft Edge] › tests\reliability.spec.ts:83:1 › failed profile submission reports an error and Go Back permits retry (2.4s)
+  ok 11 [Microsoft Edge] › tests\reliability.spec.ts:93:1 › tutor maps five styles, labels sources, and ignores a stale style response (2.8s)
+  ok 12 [Microsoft Edge] › tests\visual-polish.spec.ts:4:3 › learning flow, focus, reduced motion and layout at 390px (1.8s)
+  ok 13 [Microsoft Edge] › tests\visual-polish.spec.ts:4:3 › learning flow, focus, reduced motion and layout at 1440px (2.1s)
+  ok 14 [Microsoft Edge] › tests\visual-polish.spec.ts:54:1 › empty and malformed requirements gate Continue (1.8s)
+  ok 15 [Microsoft Edge] › tests\visual-polish.spec.ts:67:2 › null requirements show an error instead of permanent loading (1.1s)
+
+  15 passed (39.9s)

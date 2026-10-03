@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "seed": "tsx src/pipeline/seed.ts",
+    "scrape": "tsx src/scraper/run-scraper.ts",
+    "scrape:import": "tsx src/scraper/import-scraped.ts",
+    "test": "tsx --test src/__tests__/*.test.ts",
+    "lint": "eslint src --ext .ts --report-unused-disable-directives --max-warnings 0",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0",
+    "axios": "^1.20.0",
+    "better-sqlite3": "^11.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.4",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint": "^8.57.1",
+    "playwright": "^1.63.0",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

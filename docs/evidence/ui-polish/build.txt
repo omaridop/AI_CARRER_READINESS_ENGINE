@@ -1,0 +1,29 @@
+
+> skillbridge@0.1.0 build
+> npm run build:backend && npm run build:frontend
+
+
+> skillbridge@0.1.0 build:backend
+> npm run build --workspace=backend
+
+
+> backend@0.1.0 build
+> tsc
+
+
+> skillbridge@0.1.0 build:frontend
+> npm run build --workspace=frontend
+
+
+> frontend@0.1.0 build
+> tsc -b && vite build
+
+vite v6.4.3 building for production...
+transforming...
+✓ 39 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.43 kB │ gzip:  0.30 kB
+dist/assets/index-DsE4qLQW.css   25.73 kB │ gzip:  6.18 kB
+dist/assets/index-Bz0r1CVG.js   173.14 kB │ gzip: 54.79 kB
+✓ built in 2.35s

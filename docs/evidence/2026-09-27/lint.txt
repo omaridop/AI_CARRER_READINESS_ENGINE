@@ -1,0 +1,110 @@
+
+> skillbridge@0.1.0 lint
+> npm run lint --workspaces
+
+
+> frontend@0.1.0 lint
+> eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0
+
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\context\WizardContext.tsx
+  111:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\hooks\useApi.ts
+  4:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\screens\2_TargetRole.tsx
+   8:68  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  39:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\utils\api.ts
+  23:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 5 problems (4 errors, 1 warning)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend
+npm error workspace frontend@0.1.0
+npm error location C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0
+
+
+> backend@0.1.0 lint
+> eslint src --ext .ts --report-unused-disable-directives --max-warnings 0
+
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\__tests__\analysis.service.test.ts
+   9:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  27:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  38:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  72:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  85:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  95:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\__tests__\api.integration.test.ts
+  20:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\__tests__\skills.test.ts
+  14:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\__tests__\tutor.test.ts
+  19:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\ai\anthropic-client.ts
+  122:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\ai\schema-validator.ts
+  31:15  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  49:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\data\analysis.repo.ts
+  54:96  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\data\profile.repo.ts
+  61:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\data\skills.repo.ts
+  18:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\pipeline\skill-extractor.ts
+  35:40  error  Unnecessary escape character: \/  no-useless-escape
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\routes\analysis.routes.ts
+  31:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\routes\profile.routes.ts
+  22:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\routes\roles.routes.ts
+  18:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\routes\skills.routes.ts
+  12:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\routes\tutor.routes.ts
+  56:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\services\roadmap.service.ts
+  31:61  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\services\tutor.service.ts
+  55:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\utils\response.ts
+  8:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend\src\validation\schemas.ts
+   5:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 26 problems (26 errors, 0 warnings)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend
+npm error workspace backend@0.1.0
+npm error location C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\backend
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint src --ext .ts --report-unused-disable-directives --max-warnings 0

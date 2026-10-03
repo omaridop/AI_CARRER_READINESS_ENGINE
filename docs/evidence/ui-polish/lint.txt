@@ -1,0 +1,23 @@
+
+> frontend@0.1.0 lint
+> eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0
+
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\context\WizardContext.tsx
+  115:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\hooks\useApi.ts
+  4:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend\src\utils\api.ts
+  23:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 3 problems (2 errors, 1 warning)
+
+npm error Lifecycle script `lint` failed with error:
+npm error code 1
+npm error path C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend
+npm error workspace frontend@0.1.0
+npm error location C:\Users\epico\OneDrive\Documentos\Desktop\AI_CAREER_READINESS_PROJECT\frontend
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c eslint src --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0
